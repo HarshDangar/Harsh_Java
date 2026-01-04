@@ -1,0 +1,59 @@
+public class P81 {
+    public static void main(String[] args) {
+        int[] arr = {2, 5, 6, 0, 0, 1, 2};
+        System.out.println(search(arr, 8));
+    }
+
+    public static boolean search(int[] nums, int target) {
+        int pivot = findPivot(nums);
+
+        if (pivot == -1) {
+            if (binarysearch(nums, 0, 0, nums.length - 1) == -1) {
+                return false;
+            } else return true;
+        }
+
+        if (nums[pivot] == target)
+            return true;
+
+        if (target >= nums[0] && pivot > 0) {
+            if (binarysearch(nums, target, 0, pivot - 1) == -1) {
+                return false;
+            } else return true;
+        }
+        return true;
+
+    }
+
+    static int findPivot(int[] arr) {
+        int count = 0;
+        int pivot;
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (arr[start] > arr[end] && start < end) {
+            count++;
+            start++;
+        }
+        pivot = count - 1;
+
+        return pivot;
+    }
+
+    static int binarysearch(int[] arr, int target, int start, int end) {
+
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+
+            if (target < arr[mid]) {
+                end = mid - 1;
+            } else if (target > arr[mid]) {
+                start = mid + 1;
+            } else {
+                return mid;
+            }
+        }
+
+        return -1;
+    }
+}
