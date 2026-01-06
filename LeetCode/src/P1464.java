@@ -1,6 +1,6 @@
 public class P1464 {
     public static void main(String[] args) {
-        int[] nums = {1,5,4,5};
+        int[] nums = {1, 5, 4, 5};
         System.out.println(maxProduct2(nums));
     }
 

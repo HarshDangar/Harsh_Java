@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class P566 {
     public static void main(String[] args) {
-        int[][] mat = {{1,2},{3,4}};
-        System.out.println(Arrays.deepToString(matrixReshape(mat,1,4)));
+        int[][] mat = {{1, 2}, {3, 4}};
+        System.out.println(Arrays.deepToString(matrixReshape(mat, 1, 4)));
     }
 
     public static int[][] matrixReshape(int[][] mat, int r, int c) {

@@ -1,6 +1,6 @@
 public class P704 {
     public static void main(String[] args) {
-        int[] nums = {-1,0,3,5,9,12};
+        int[] nums = {-1, 0, 3, 5, 9, 12};
         int target = 9;
         int res = search(nums, target);
         if (res == -1)
@@ -26,7 +26,7 @@ public class P704 {
             if (target < arr[mid])
                 return find(arr, start, mid - 1, target);
             else
-                return find(arr, mid + 1, end ,target);
+                return find(arr, mid + 1, end, target);
         }
         return -1;
     }

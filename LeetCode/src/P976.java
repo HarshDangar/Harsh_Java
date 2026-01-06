@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class P976 {
     public static void main(String[] args) {
-        int[] nums = {1,2,13,10,5,12};
+        int[] nums = {1, 2, 13, 10, 5, 12};
         System.out.println(largestPerimeter(nums));
     }
 

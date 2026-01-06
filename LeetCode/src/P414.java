@@ -1,7 +1,7 @@
 
 public class P414 {
     public static void main(String[] args) {
-        int[] nums = {1,2,-2147483648};
+        int[] nums = {1, 2, -2147483648};
         System.out.println(thirdMax(nums));
     }
 
@@ -10,7 +10,7 @@ public class P414 {
         long sMax = Long.MIN_VALUE;
         long max = Long.MIN_VALUE;
 
-        for (int num: nums) {
+        for (int num : nums) {
             if (num > max) {
                 fMax = sMax;
                 sMax = max;

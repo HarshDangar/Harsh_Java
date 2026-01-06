@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class P1502 {
     public static void main(String[] args) {
-        int[] nums = {1,2,4};
+        int[] nums = {1, 2, 4};
         System.out.println(canMakeArithmeticProgression(nums));
     }
 

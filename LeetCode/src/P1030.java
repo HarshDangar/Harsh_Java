@@ -8,10 +8,10 @@ public class P1030 {
 
     public static int[][] allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {
         int[][] result = new int[rows * cols][];
-        result[0] = new int[] {rCenter, cCenter};
+        result[0] = new int[]{rCenter, cCenter};
 
         int index = 1;
-        int maxDistance = Math.max(rCenter, rows-rCenter-1) + Math.max(cCenter, cols-cCenter-1);
+        int maxDistance = Math.max(rCenter, rows - rCenter - 1) + Math.max(cCenter, cols - cCenter - 1);
 
         for (int distance = 1; distance <= maxDistance; distance++) {
             //Current row will be top position on diamond shape
@@ -21,7 +21,7 @@ public class P1030 {
             //Traversing from top to left
             for (int count = distance; count > 0; count--) {
                 if (currentRow >= 0 && currentCol >= 0) {
-                    result[index++] = new int[] {currentRow, currentCol};
+                    result[index++] = new int[]{currentRow, currentCol};
                 }
                 currentRow++;
                 currentCol--;
@@ -30,7 +30,7 @@ public class P1030 {
             //Left to bottom
             for (int count = distance; count > 0; count--) {
                 if (currentRow < rows && currentCol >= 0) {
-                    result[index++] = new int[] {currentRow, currentCol};
+                    result[index++] = new int[]{currentRow, currentCol};
                 }
                 currentRow++;
                 currentCol++;
@@ -39,7 +39,7 @@ public class P1030 {
             //Bottom to right
             for (int count = distance; count > 0; count--) {
                 if (currentRow < rows && currentCol < cols) {
-                    result[index++] = new int[] {currentRow, currentCol};
+                    result[index++] = new int[]{currentRow, currentCol};
                 }
                 currentRow--;
                 currentCol++;
@@ -48,7 +48,7 @@ public class P1030 {
             //Right to top
             for (int count = distance; count > 0; count--) {
                 if (currentRow >= 0 && currentCol < cols) {
-                    result[index++] = new int[] {currentRow, currentCol};
+                    result[index++] = new int[]{currentRow, currentCol};
                 }
                 currentRow--;
                 currentCol--;

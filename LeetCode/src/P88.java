@@ -4,7 +4,7 @@ public class P88 {
     public static void main(String[] args) {
         int[] nums1 = {0}, nums2 = {1};
         int m = 0, n = 1;
-        merge(nums1,m,nums2,n);
+        merge(nums1, m, nums2, n);
         System.out.println(Arrays.toString(nums1));
     }
 

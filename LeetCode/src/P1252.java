@@ -1,7 +1,7 @@
 public class P1252 {
     public static void main(String[] args) {
-        int[][] indices = {{0,1},{1,1}};
-        System.out.println(oddCells(2,3,indices));
+        int[][] indices = {{0, 1}, {1, 1}};
+        System.out.println(oddCells(2, 3, indices));
     }
 
     public static int oddCells(int m, int n, int[][] indices) {

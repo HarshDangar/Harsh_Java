@@ -1,6 +1,6 @@
 public class P1491 {
     public static void main(String[] args) {
-        int[] nums = {4000,3000,1000,2000};
+        int[] nums = {4000, 3000, 1000, 2000};
         System.out.println(average(nums));
     }
 
@@ -9,7 +9,7 @@ public class P1491 {
         int min = Integer.MAX_VALUE;
         int total = 0;
 
-        for (int num: salary) {
+        for (int num : salary) {
             total += num;
             if (num > max) {
                 max = num;

@@ -3,7 +3,7 @@ import java.util.HashMap;
 
 public class P1331 {
     public static void main(String[] args) {
-        int[] arr = {37,12,28,9,100,56,80,5,12};
+        int[] arr = {37, 12, 28, 9, 100, 56, 80, 5, 12};
         System.out.println(Arrays.toString(arrayRankTransform(arr)));
     }
 
@@ -14,7 +14,7 @@ public class P1331 {
         int rank = 1;
 
         HashMap<Integer, Integer> map = new HashMap<>();
-        for (int num: arr) {
+        for (int num : arr) {
             if (!map.containsKey(num)) {
                 map.put(num, rank);
                 rank++;

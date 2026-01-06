@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class P885 {
     public static void main(String[] args) {
-        System.out.println(Arrays.deepToString(spiralMatrixIII(5,6,1,4)));
+        System.out.println(Arrays.deepToString(spiralMatrixIII(5, 6, 1, 4)));
     }
 
     public static int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {

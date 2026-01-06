@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class P436 {
     public static void main(String[] args) {
-        int[][] intervals = {{1,2},{2,3},{0,1},{3,4}};
+        int[][] intervals = {{1, 2}, {2, 3}, {0, 1}, {3, 4}};
         System.out.println(Arrays.toString(findRightInterval(intervals)));
     }
 
@@ -10,7 +10,7 @@ public class P436 {
         int[] ans = new int[intervals.length];
 
         for (int i = 0; i < intervals.length; i++) {
-            ans[i] = search(intervals[i][1] , intervals);
+            ans[i] = search(intervals[i][1], intervals);
         }
         return ans;
     }

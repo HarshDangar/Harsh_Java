@@ -4,14 +4,14 @@ import java.util.Set;
 
 public class P217 {
     public static void main(String[] args) {
-        int[] nums = {1,2,3};
+        int[] nums = {1, 2, 3};
         System.out.println(containsDuplicate2(nums));
     }
 
     public static boolean containsDuplicate(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
-        for (int num: nums) {
+        for (int num : nums) {
             map.put(num, map.getOrDefault(num, 0) + 1);
 
             if (map.get(num) > 1)

@@ -3,12 +3,12 @@ import java.util.Arrays;
 public class P1886 {
     public static void main(String[] args) {
         int[][] mat = {{0, 0, 0}, {0, 1, 0}, {1, 1, 1}};
-        int[][] target = {{1,1,1},{0,1,0},{0,0,0}};
+        int[][] target = {{1, 1, 1}, {0, 1, 0}, {0, 0, 0}};
         System.out.println(findRotation(mat, target));
     }
 
     public static boolean findRotation(int[][] mat, int[][] target) {
-        if (isSame(mat,target))
+        if (isSame(mat, target))
             return true;
 
         for (int i = 0; i < 3; i++) {
