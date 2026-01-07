@@ -8,7 +8,7 @@ public class P81 {
         int pivot = findPivot(nums);
 
         if (pivot == -1) {
-            if (binarysearch(nums, 0, 0, nums.length - 1) == -1) {
+            if (binarySearch(nums, 0, 0, nums.length - 1) == -1) {
                 return false;
             } else return true;
         }
@@ -17,7 +17,7 @@ public class P81 {
             return true;
 
         if (target >= nums[0] && pivot > 0) {
-            if (binarysearch(nums, target, 0, pivot - 1) == -1) {
+            if (binarySearch(nums, target, 0, pivot - 1) == -1) {
                 return false;
             } else return true;
         }
@@ -25,7 +25,7 @@ public class P81 {
 
     }
 
-    static int findPivot(int[] arr) {
+    public static int findPivot(int[] arr) {
         int count = 0;
         int pivot;
         int start = 0;
@@ -40,7 +40,7 @@ public class P81 {
         return pivot;
     }
 
-    static int binarysearch(int[] arr, int target, int start, int end) {
+    public static int binarySearch(int[] arr, int target, int start, int end) {
 
         while (start <= end) {
             int mid = start + (end - start) / 2;
