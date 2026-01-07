@@ -10,7 +10,7 @@ public class P33 {
         int pivot = findPivot(nums);
 
         if (pivot == -1) {
-            return binarysearch(nums, target, 0, nums.length - 1);
+            return binarySearch(nums, target, 0, nums.length - 1);
         }
 
         if (nums[pivot] == target) {
@@ -18,12 +18,12 @@ public class P33 {
         }
 
         if (target >= nums[0] && pivot > 0) {
-            return binarysearch(nums, target, 0, pivot - 1);
+            return binarySearch(nums, target, 0, pivot - 1);
         }
-        return binarysearch(nums, target, pivot + 1, nums.length - 1);
+        return binarySearch(nums, target, pivot + 1, nums.length - 1);
     }
 
-    static int findPivot(int[] arr) {
+    public static int findPivot(int[] arr) {
         int count = 0;
         int pivot;
         int start = 0;
@@ -38,7 +38,7 @@ public class P33 {
         return pivot;
     }
 
-    static int binarysearch(int[] arr, int target, int start, int end) {
+    public static int binarySearch(int[] arr, int target, int start, int end) {
 
         while (start <= end) {
             int mid = start + (end - start) / 2;
