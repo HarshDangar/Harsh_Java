@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class P645 {
     public static void main(String[] args) {
-        int[] arr = {1, 1};
+        int[] arr = {3, 2, 2};
         System.out.println(Arrays.toString(findErrorNums(arr)));
     }
 
