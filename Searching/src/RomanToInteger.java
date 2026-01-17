@@ -1,16 +1,15 @@
-
-
 import java.util.Scanner;
 
 public class RomanToInteger {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print("Enter the roman String : ");
         String x = in.next();
         System.out.println(romanToInt(x));
     }
 
-    static int romanToInt(String a){
-        int ans = 0;
+    static int romanToInt(String s){
+
         /*
         I             1
         V             5
@@ -19,21 +18,29 @@ public class RomanToInteger {
         C             100
         D             500
         M             1000
+        */
 
-         */
+        int sum = 0;
+        int mainIndex = s.length()-1;
+        String romanChar = "IVXLCDM";
+        int[] value = {1,5,10,50,100,500,1000};
 
-        for (int i = 0; i < a.length(); i++) {
-            switch (a.charAt(i)){
-                case 'I' -> ans += 1;
-                case 'V' -> ans += 5;
-                case 'X' -> ans += 10;
-                case 'L' -> ans += 50;
-                case 'C' -> ans += 100;
-                case 'D' -> ans += 500;
-                case 'M' -> ans += 1000;
-                default -> ans = -1;
+        while (mainIndex > 0){
+            int index1 = romanChar.indexOf(s.charAt(mainIndex - 1));
+            int index2 = romanChar.indexOf(s.charAt(mainIndex));
+
+            if (index1 < index2){
+                sum = sum + value[index2] - value[index1];
+                mainIndex -= 2;
+            } else {
+                sum = sum + value[index2];
+                mainIndex -= 1;
             }
         }
-        return ans;
+
+        if (mainIndex == 0){
+            sum = value[romanChar.indexOf(s.charAt(mainIndex))] + sum;
+        }
+        return sum;
     }
 }
