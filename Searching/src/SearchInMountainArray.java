@@ -33,8 +33,6 @@ public class SearchInMountainArray {
     }
 
     static int orderAgnosticBS(int[] arr, int target, int start, int end) {
-
-
         boolean isAsc = arr[start] < arr[end];
 
         while(start <= end) {
