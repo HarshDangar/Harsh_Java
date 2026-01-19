@@ -7,10 +7,10 @@ public class P1672 {
     public static int maximumWealth(int[][] accounts) {
         int ans = Integer.MIN_VALUE;
 
-        for (int i = 0; i < accounts.length; i++) {
+        for (int[] account : accounts) {
             int sum = 0;
-            for (int j = 0; j < accounts[i].length; j++) {
-                sum += accounts[i][j];
+            for (int j = 0; j < account.length; j++) {
+                sum += account[j];
             }
             if (sum > ans) {
                 ans = sum;

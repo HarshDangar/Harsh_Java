@@ -26,7 +26,7 @@ public class P53 {
         int sum = nums[0];
 
         for (int i = 1; i < nums.length; i++) {
-            // check for businessman to joint in joint venture
+            // check for businessman to join in joint venture
 
             if (sum >= 0) {
                 sum += nums[i];

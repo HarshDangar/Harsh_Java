@@ -4,13 +4,17 @@ import java.util.ArrayList;
 
 public class SubSeq {
     public static void main(String[] args) {
-        subseq("", "abc");
+//        subseq("", "abc");
         System.out.println(subseqRet("","abc"));
+//        subseqAscii("", "abc");
+//        System.out.println(subseqAsciiRet("", "abc"));
     }
 
     static void subseq(String p, String up){
         if (up.isEmpty()){
             System.out.println(p);
+            //When unprocessed string become empty we have found the possible answer
+            // that's why we are printing it and returning it to complete the recursion call
             return;
         }
 

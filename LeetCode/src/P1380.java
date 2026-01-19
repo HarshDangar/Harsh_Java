@@ -10,21 +10,21 @@ public class P1380 {
     static List<Integer> luckyNumbers(int[][] matrix) {
         ArrayList<Integer> list = new ArrayList<>();
 
-        for (int i = 0; i < matrix.length; i++) {
+        for (int[] arr : matrix) {
             int minIndex = 0;
             int min = Integer.MAX_VALUE;
             int max = Integer.MIN_VALUE;
 
             for (int j = 0; j < matrix[0].length; j++) {
-                if (matrix[i][j] < min) {
+                if (arr[j] < min) {
                     minIndex = j;
-                    min = matrix[i][j];
+                    min = arr[j];
                 }
             }
 
-            for (int k = 0; k < matrix.length; k++) {
-                if (matrix[k][minIndex] > max) {
-                    max = matrix[k][minIndex];
+            for (int[] value : matrix) {
+                if (value[minIndex] > max) {
+                    max = value[minIndex];
                 }
             }
 

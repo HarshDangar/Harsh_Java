@@ -10,9 +10,11 @@ public class P410 {
         int start = 0;
         int end = 0;
 
-        for (int j : nums) {
-            start = Math.max(start, j);// for finding minimum answer in for this problem that is largest element in array
-            end += j;
+        for (int num : nums) {
+            start = Math.max(start, num);
+            // the minimum answer for this problem will be the largest element in the array (n = array.length partition)
+            end += num;
+            // the max answer will be total of the array (n = 1 partition)
         }
 
         // binary search
@@ -25,6 +27,8 @@ public class P410 {
 
             for (int num : nums) {
                 if (sum + num > mid) {
+                    // We cannot add this to this subarray we have to make another
+                    //Means new sum will start from the num itself (next element in the array)
                     sum = num;
                     pieces++;
                 } else {

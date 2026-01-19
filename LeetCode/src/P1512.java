@@ -3,18 +3,20 @@ import java.util.HashMap;
 public class P1512 {
     public static void main(String[] args) {
         int[] nums = {1, 1, 1, 1};
-        System.out.println(numIdenticalPairs2(nums));
+        System.out.println(numIdenticalPairs(nums));
     }
 
     static int numIdenticalPairs(int[] nums) {
-        int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (nums[i] == nums[j])
-                    count++;
-            }
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int ans = 0;
+        for (int i : nums) {
+            map.put(i, map.getOrDefault(i, 0) + 1);
         }
-        return count;
+
+        for (int key: map.keySet()) {
+            ans += map.get(key) * (map.get(key) - 1) / 2;
+        }
+        return ans;
     }
 
     public static int numIdenticalPairs2(int[] nums) {
