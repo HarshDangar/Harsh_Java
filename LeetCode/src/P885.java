@@ -5,7 +5,7 @@ public class P885 {
         System.out.println(Arrays.deepToString(spiralMatrixIII(5, 6, 1, 4)));
     }
 
-    public static int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
+    private static int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
         int[][] directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}}; // East, South, West, North
         int[][] result = new int[rows * cols][2];
         int steps = 0, d = 0;

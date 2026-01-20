@@ -1,5 +1,5 @@
 public class P1290 {
-    public static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 
@@ -16,7 +16,7 @@ public class P1290 {
         }
     }
 
-    public static int getDecimalValue(ListNode head) {
+    private static int getDecimalValue(ListNode head) {
         int num = 0;
         while (head != null) {
             num = (num << 1) | head.val;

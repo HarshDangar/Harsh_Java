@@ -1,5 +1,5 @@
 public class P206 {
-    public static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 
@@ -16,7 +16,7 @@ public class P206 {
         }
     }
 
-    public ListNode reverseList(ListNode head) {
+    private ListNode reverseList(ListNode head) {
         return reverseListInt(head, null);
     }
 

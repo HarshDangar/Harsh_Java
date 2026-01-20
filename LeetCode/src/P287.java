@@ -4,7 +4,7 @@ public class P287 {
         System.out.println(findDuplicate(arr));
     }
 
-    static int findDuplicate(int[] nums) {
+    private static int findDuplicate(int[] nums) {
         int i = 0;
 
         while (i < nums.length) {
@@ -23,7 +23,7 @@ public class P287 {
         return -1;
     }
 
-    static void swap(int[] arr, int first, int second) {
+    private static void swap(int[] arr, int first, int second) {
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;

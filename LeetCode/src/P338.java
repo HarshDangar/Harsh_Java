@@ -5,7 +5,7 @@ public class P338 {
         System.out.println(Arrays.toString(countBits2(5)));
     }
 
-    public static int[] countBits(int n) {
+    private static int[] countBits(int n) {
         int[] ans = new int[n + 1];
 
         for (int i = 0; i < ans.length; i++) {
@@ -15,7 +15,7 @@ public class P338 {
         return ans;
     }
 
-    public static int count(int n) {
+    private static int count(int n) {
         int count = 0;
 
         while (n > 0) {
@@ -26,7 +26,7 @@ public class P338 {
         return count;
     }
 
-    public static int[] countBits2(int n) {
+    private static int[] countBits2(int n) {
         int[] ans = new int[n + 1];
         for (int i = 1; i <= n; i++) {
             ans[i] = ans[i >> 1] + (i & 1);

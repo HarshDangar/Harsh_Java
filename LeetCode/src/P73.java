@@ -10,7 +10,7 @@ public class P73 {
         System.out.println(Arrays.deepToString(matrix));
     }
 
-    public static void setZeroes(int[][] matrix) {
+    private static void setZeroes(int[][] matrix) {
         Set<Integer> rowSet = new HashSet<>();
         Set<Integer> colSet = new HashSet<>();
 

@@ -3,7 +3,7 @@ public class P1486 {
         System.out.println(xorOperation(4, 3));
     }
 
-    public static int xorOperation(int n, int start) {
+    private static int xorOperation(int n, int start) {
         int[] arr = new int[n];
         int ans = 0;
 

@@ -4,7 +4,7 @@ public class P13 {
         System.out.println(romanToInt(s));
     }
 
-    public static int romanToInt(String s) {
+    private static int romanToInt(String s) {
         int sum = 0;
         int mainIndex = s.length() - 1;
         String romanChar = "IVXLCDM";

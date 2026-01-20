@@ -7,7 +7,7 @@ public class P75 {
         System.out.println(Arrays.toString(nums));
     }
 
-    public static void sortColors(int[] nums) {
+    private static void sortColors(int[] nums) {
         int[] arr = new int[nums.length];
 
         for (int i = 0; i < nums.length; i++) {

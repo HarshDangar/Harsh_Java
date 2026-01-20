@@ -7,7 +7,7 @@ public class P1331 {
         System.out.println(Arrays.toString(arrayRankTransform(arr)));
     }
 
-    public static int[] arrayRankTransform(int[] arr) {
+    private static int[] arrayRankTransform(int[] arr) {
         int[] duplicate = Arrays.copyOf(arr, arr.length);
         Arrays.sort(arr);
         int[] ans = new int[arr.length];

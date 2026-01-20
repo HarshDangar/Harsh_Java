@@ -5,7 +5,7 @@ public class P1095 {
         System.out.println(findInMountainArray(target, arr));
     }
 
-    public static int findInMountainArray(int target, int[] mountainArr) {
+    private static int findInMountainArray(int target, int[] mountainArr) {
         int peak = peakIndexInMountainArray(mountainArr);
         int firstTry = orderAgnosticBS(mountainArr, target, 0, peak);
         if (firstTry != -1) {
@@ -14,7 +14,7 @@ public class P1095 {
         return orderAgnosticBS(mountainArr, target, peak + 1, mountainArr.length - 1);
     }
 
-    public static int peakIndexInMountainArray(int[] arr) {
+    private static int peakIndexInMountainArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
 
@@ -30,7 +30,7 @@ public class P1095 {
         return start;
     }
 
-    static int orderAgnosticBS(int[] arr, int target, int start, int end) {
+    private static int orderAgnosticBS(int[] arr, int target, int start, int end) {
         boolean isAsc = arr[start] < arr[end];
 
         while (start <= end) {

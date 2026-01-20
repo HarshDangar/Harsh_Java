@@ -6,7 +6,7 @@ public class P1854 {
         System.out.println(maximumPopulation(logs));
     }
 
-    public static int maximumPopulation(int[][] logs) {
+    private static int maximumPopulation(int[][] logs) {
         Arrays.sort(logs, (a, b) -> Integer.compare(a[0], b[0]));
         /*
         It is lambda expression to sort the array with value at zero index

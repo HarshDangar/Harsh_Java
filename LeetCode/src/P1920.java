@@ -6,7 +6,7 @@ public class P1920 {
         System.out.println(Arrays.toString(buildArray(nums)));
     }
 
-    static int[] buildArray(int[] nums) {
+    private static int[] buildArray(int[] nums) {
         int[] ans = new int[nums.length];
 
         for (int i = 0; i < nums.length; i++) {

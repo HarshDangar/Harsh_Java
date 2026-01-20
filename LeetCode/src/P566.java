@@ -6,7 +6,7 @@ public class P566 {
         System.out.println(Arrays.deepToString(matrixReshape(mat, 1, 4)));
     }
 
-    public static int[][] matrixReshape(int[][] mat, int r, int c) {
+    private static int[][] matrixReshape(int[][] mat, int r, int c) {
         int total = mat.length * mat[0].length;
         if (total != r * c)
             return mat;

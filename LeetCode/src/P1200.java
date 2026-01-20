@@ -8,7 +8,7 @@ public class P1200 {
         System.out.println(minimumAbsDifference(nums));
     }
 
-    public static List<List<Integer>> minimumAbsDifference(int[] arr) {
+    private static List<List<Integer>> minimumAbsDifference(int[] arr) {
         Arrays.sort(arr);
         List<List<Integer>> list = new ArrayList<>();
 

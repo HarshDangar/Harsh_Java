@@ -4,7 +4,7 @@ public class P557 {
         System.out.println(reverseWords(s));
     }
 
-    public static String reverseWords(String s) {
+    private static String reverseWords(String s) {
         String[] temp = s.split(" ");
         StringBuilder finalAns = new StringBuilder();
 

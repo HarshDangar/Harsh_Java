@@ -4,7 +4,7 @@ public class P1672 {
         System.out.println(maximumWealth2(accounts));
     }
 
-    public static int maximumWealth(int[][] accounts) {
+    private static int maximumWealth(int[][] accounts) {
         int ans = Integer.MIN_VALUE;
 
         for (int[] account : accounts) {
@@ -19,7 +19,7 @@ public class P1672 {
         return ans;
     }
 
-    public static int maximumWealth2(int[][] accounts) {
+    private static int maximumWealth2(int[][] accounts) {
         int ans = Integer.MIN_VALUE;
         for (int[] account : accounts) {
             int sum = 0;

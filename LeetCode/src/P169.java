@@ -7,7 +7,7 @@ public class P169 {
         System.out.println(majorityElement(nums));
     }
 
-    public static int majorityElement(int[] nums) {
+    private static int majorityElement(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int num : nums) {

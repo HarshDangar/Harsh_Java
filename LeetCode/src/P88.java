@@ -8,7 +8,7 @@ public class P88 {
         System.out.println(Arrays.toString(nums1));
     }
 
-    public static void merge(int[] nums1, int m, int[] nums2, int n) {
+    private static void merge(int[] nums1, int m, int[] nums2, int n) {
         int x = m - 1;
         int y = n - 1; // index
 

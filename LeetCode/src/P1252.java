@@ -4,7 +4,7 @@ public class P1252 {
         System.out.println(oddCells(2, 3, indices));
     }
 
-    public static int oddCells(int m, int n, int[][] indices) {
+    private static int oddCells(int m, int n, int[][] indices) {
         int[][] arr = new int[m][n];
         int count = 0;
 

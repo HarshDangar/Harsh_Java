@@ -3,7 +3,7 @@ public class P2220 {
         System.out.println(minBitFlips(3, 4));
     }
 
-    public static int minBitFlips(int start, int goal) {
+    private static int minBitFlips(int start, int goal) {
         int count = 0;
 
         while (start != 0 || goal != 0) {

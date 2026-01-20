@@ -6,7 +6,7 @@ public class P977 {
         System.out.println(Arrays.toString(sortedSquares(nums)));
     }
 
-    public static int[] sortedSquares(int[] nums) {
+    private static int[] sortedSquares(int[] nums) {
         int[] ans = new int[nums.length];
         int left = 0;
         int right = nums.length - 1;

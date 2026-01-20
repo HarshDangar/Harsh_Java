@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class P102 {
-    public class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -23,7 +23,7 @@ public class P102 {
         }
     }
 
-    public static List<List<Integer>> levelOrder(TreeNode root) {
+    private static List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
 
         if (root == null) {

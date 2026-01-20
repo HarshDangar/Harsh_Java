@@ -7,7 +7,7 @@ public class P728 {
         System.out.println(selfDividingNumbers(left, right));
     }
 
-    public static List<Integer> selfDividingNumbers(int left, int right) {
+    private static List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> list = new ArrayList<>();
         for (int i = left; i <= right; i++) {
             if (i < 10)
@@ -18,7 +18,7 @@ public class P728 {
         return list;
     }
 
-    public static boolean check(int num) {
+    private static boolean check(int num) {
         int temp = num;
         
         while (temp > 0) {

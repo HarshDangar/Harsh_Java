@@ -8,7 +8,7 @@ public class P888 {
         System.out.println(Arrays.toString(fairCandySwap(aliceSizes, bobSizes)));
     }
 
-    public static int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
+    private static int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
         int aliceTotal = 0;
         int bobTotal = 0;
 

@@ -7,7 +7,7 @@ public class P34 {
         System.out.println(Arrays.toString(searchRange(arr, target)));
     }
 
-    static int[] searchRange(int[] nums, int target) {
+    private static int[] searchRange(int[] nums, int target) {
         int[] ans = {-1, -1};
         // check for first occurrence if target first
         ans[0] = search(nums, target, true);
@@ -18,7 +18,7 @@ public class P34 {
     }
 
     // this function just returns the index value of target
-    static int search(int[] nums, int target, boolean findStartIndex) {
+    private static int search(int[] nums, int target, boolean findStartIndex) {
         int ans = -1;
         int start = 0;
         int end = nums.length - 1;

@@ -8,7 +8,7 @@ public class P26 {
         System.out.println(Arrays.toString(nums));
     }
 
-    static int removeDuplicates(int[] nums) {
+    private static int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
 
         int i = 1;

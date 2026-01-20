@@ -6,7 +6,7 @@ public class P1502 {
         System.out.println(canMakeArithmeticProgression(nums));
     }
 
-    public static boolean canMakeArithmeticProgression(int[] arr) {
+    private static boolean canMakeArithmeticProgression(int[] arr) {
         Arrays.sort(arr);
         int difference = arr[1] - arr[0];
 

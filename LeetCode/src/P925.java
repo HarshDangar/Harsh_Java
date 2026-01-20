@@ -4,7 +4,7 @@ public class P925 {
         System.out.println(isLongPressedName(name, typed));
     }
 
-    public static boolean isLongPressedName(String name, String typed) {
+    private static boolean isLongPressedName(String name, String typed) {
         int i = 1, j = 1;
 
         //Checking the first character

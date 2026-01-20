@@ -3,7 +3,7 @@ public class P509 {
         System.out.println(fib(4));
     }
 
-    public static int fib(int n) {
+    private static int fib(int n) {
         if (n <= 1) return n;
 
         int prev1 = 1;

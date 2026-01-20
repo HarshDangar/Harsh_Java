@@ -4,7 +4,7 @@ public class P67 {
         System.out.println(addBinary(a, b));
     }
 
-    public static String addBinary(String a, String b) {
+    private static String addBinary(String a, String b) {
         StringBuilder res = new StringBuilder();
         int i = a.length() - 1;
         int j = b.length() - 1;

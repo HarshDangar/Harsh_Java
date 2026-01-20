@@ -8,7 +8,7 @@ public class P1389 {
         System.out.println(Arrays.toString(createTargetArray2(nums, index)));
     }
 
-    public static int[] createTargetArray(int[] nums, int[] index) {
+    private static int[] createTargetArray(int[] nums, int[] index) {
         int[] target = new int[nums.length];
         Arrays.fill(target, -1);
 
@@ -26,7 +26,7 @@ public class P1389 {
         return target;
     }
 
-    public static int[] createTargetArray2(int[] nums, int[] index) {
+    private static int[] createTargetArray2(int[] nums, int[] index) {
         ArrayList<Integer> ans = new ArrayList<>();
 
         for (int i = 0; i < nums.length; i++) {

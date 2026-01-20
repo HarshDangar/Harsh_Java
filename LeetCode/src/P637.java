@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class P637 {
-    public class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -25,7 +25,7 @@ public class P637 {
         }
     }
 
-    public List<Double> averageOfLevels(TreeNode root) {
+    private static List<Double> averageOfLevels(TreeNode root) {
         List<Double> result = new ArrayList<>();
 
         if (root == null) {
@@ -56,7 +56,7 @@ public class P637 {
         return result;
     }
 
-    public TreeNode findSuccessor(TreeNode root, int key) {
+    private static TreeNode findSuccessor(TreeNode root, int key) {
         if (root == null) {
             return null;
         }

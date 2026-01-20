@@ -6,7 +6,7 @@ public class P905 {
         System.out.println(Arrays.toString(sortArrayByParity(nums)));
     }
 
-    public static int[] sortArrayByParity(int[] nums) {
+    private static int[] sortArrayByParity(int[] nums) {
         int index = 0;
         int i = 0;
         int j = nums.length - 1;

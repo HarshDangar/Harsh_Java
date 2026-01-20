@@ -6,7 +6,7 @@ public class P455 {
         System.out.println(findContentChildren(g, s));
     }
 
-    public static int findContentChildren(int[] g, int[] s) {
+    private static int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);
         int i = 0, j = 0;

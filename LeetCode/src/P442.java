@@ -7,7 +7,7 @@ public class P442 {
         System.out.println(findDuplicates(arr));
     }
 
-    static List<Integer> findDuplicates(int[] nums) {
+    private static List<Integer> findDuplicates(int[] nums) {
         List<Integer> ans = new ArrayList<>();
         int i = 0;
 
@@ -29,7 +29,7 @@ public class P442 {
         return ans;
     }
 
-    static void swap(int[] arr, int first, int second) {
+    private static void swap(int[] arr, int first, int second) {
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;

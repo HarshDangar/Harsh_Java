@@ -8,7 +8,7 @@ public class P217 {
         System.out.println(containsDuplicate2(nums));
     }
 
-    public static boolean containsDuplicate(int[] nums) {
+    private static boolean containsDuplicate(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int num : nums) {
@@ -20,7 +20,7 @@ public class P217 {
         return false;
     }
 
-    public static boolean containsDuplicate2(int[] nums) {
+    private static boolean containsDuplicate2(int[] nums) {
         Set<Integer> numSet = new HashSet<>();
 
         for (int n : nums) {

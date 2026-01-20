@@ -10,7 +10,7 @@ public class P349_2 {
         System.out.println(Arrays.toString(intersection(nums1, nums2)));
     }
 
-    public static int[] intersection(int[] nums1, int[] nums2) {
+    private static int[] intersection(int[] nums1, int[] nums2) {
         HashSet<Integer> set = new HashSet<>();
         for (int value : nums1) {
             set.add(value);

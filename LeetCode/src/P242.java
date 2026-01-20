@@ -6,7 +6,7 @@ public class P242 {
         System.out.println(isAnagram(s, t));
     }
 
-    public static boolean isAnagram(String s, String t) {
+    private static boolean isAnagram(String s, String t) {
         char[] first = s.toCharArray();
         char[] second = t.toCharArray();
         Arrays.sort(first);

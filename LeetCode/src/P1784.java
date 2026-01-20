@@ -4,7 +4,7 @@ public class P1784 {
         System.out.println(checkOnesSegment(s));
     }
 
-    public static boolean checkOnesSegment(String s) {
+    private static boolean checkOnesSegment(String s) {
         for (int i = 0; i < s.length() - 1; i++) {
             if (s.charAt(i) == '0' && s.charAt(i + 1) == '1') {
                 return false;

@@ -6,7 +6,7 @@ public class P436 {
         System.out.println(Arrays.toString(findRightInterval(intervals)));
     }
 
-    public static int[] findRightInterval(int[][] intervals) {
+    private static int[] findRightInterval(int[][] intervals) {
         int[] ans = new int[intervals.length];
 
         for (int i = 0; i < intervals.length; i++) {
@@ -15,7 +15,7 @@ public class P436 {
         return ans;
     }
 
-    public static int search(int num, int[][] intervals) {
+    private static int search(int num, int[][] intervals) {
         int ans = -1;
         int min = Integer.MAX_VALUE;
         for (int j = 0; j < intervals.length; j++) {

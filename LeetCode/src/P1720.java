@@ -6,7 +6,7 @@ public class P1720 {
         System.out.println(Arrays.toString(decode(encoded, 4)));
     }
 
-    public static int[] decode(int[] encoded, int first) {
+    private static int[] decode(int[] encoded, int first) {
         int[] arr = new int[encoded.length + 1];
 
         arr[0] = first;

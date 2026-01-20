@@ -7,7 +7,7 @@ public class P1967 {
         System.out.println(numOfStrings(patterns, word));
     }
 
-    public static int numOfStrings(String[] patterns, String word) {
+    private static int numOfStrings(String[] patterns, String word) {
         int count = 0;
 
         for (int i = 0; i < patterns.length; i++) {
@@ -26,7 +26,7 @@ public class P1967 {
         return count;
     }
 
-    public static boolean check(char[] temp, String word) {
+    private static boolean check(char[] temp, String word) {
         int index = -1;
 
         for (int i = 0; i < word.length(); i++) {

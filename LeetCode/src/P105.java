@@ -6,7 +6,7 @@ public class P105 {
         System.out.println(buildTree(preorder, inorder));
     }
 
-    public static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -25,7 +25,7 @@ public class P105 {
         }
     }
 
-    public static TreeNode buildTree(int[] preorder, int[] inorder) {
+    private static TreeNode buildTree(int[] preorder, int[] inorder) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < inorder.length; i++) {
@@ -37,7 +37,7 @@ public class P105 {
         return helper(preorder, inorder, 0, preorder.length - 1, map, index);
     }
 
-    public static TreeNode helper(int[] preOrder, int[] inOrder, int left, int right, HashMap<Integer, Integer> map, int[] index) {
+    private static TreeNode helper(int[] preOrder, int[] inOrder, int left, int right, HashMap<Integer, Integer> map, int[] index) {
         if (left > right) {
             return null;
         }

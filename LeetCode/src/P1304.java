@@ -5,7 +5,7 @@ public class P1304 {
         System.out.println(Arrays.toString(sumZero(6)));
     }
 
-    public static int[] sumZero(int n) {
+    private static int[] sumZero(int n) {
         int num;
         int[] arr = new int[n];
         if (n % 2 == 0) {
@@ -21,7 +21,7 @@ public class P1304 {
         return arr;
     }
 
-    public static int[] sumZero2(int n) {
+    private static int[] sumZero2(int n) {
         int[] res = new int[n];
         res[0] = n * (1 - n) / 2;
         for (int i = 1; i < n; ++i)

@@ -7,7 +7,7 @@ public class P1051 {
         System.out.println(heightChecker(heights));
     }
 
-    public static int heightChecker(int[] heights) {
+    private static int heightChecker(int[] heights) {
         int[] expected = Arrays.copyOf(heights, heights.length);
         bubble(heights);
         int count = 0;
@@ -20,7 +20,7 @@ public class P1051 {
         return count;
     }
 
-    public static void bubble(int[] arr) {
+    private static void bubble(int[] arr) {
         boolean swapped;
 
         for (int i = 0; i < arr.length; i++) {

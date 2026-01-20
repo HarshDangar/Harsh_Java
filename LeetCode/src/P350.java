@@ -9,7 +9,7 @@ public class P350 {
         System.out.println(Arrays.toString(intersect(nums1, nums2)));
     }
 
-    public static int[] intersect(int[] nums1, int[] nums2) {
+    private static int[] intersect(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);
 

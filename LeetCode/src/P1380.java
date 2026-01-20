@@ -7,7 +7,7 @@ public class P1380 {
         System.out.println(luckyNumbers(arr));
     }
 
-    static List<Integer> luckyNumbers(int[][] matrix) {
+    private static List<Integer> luckyNumbers(int[][] matrix) {
         ArrayList<Integer> list = new ArrayList<>();
 
         for (int[] arr : matrix) {

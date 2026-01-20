@@ -6,7 +6,7 @@ public class P922 {
         System.out.println(Arrays.toString(sortArrayByParityII(nums)));
     }
 
-    public static int[] sortArrayByParityII(int[] nums) {
+    private static int[] sortArrayByParityII(int[] nums) {
         int i = 0;
         int j = 1;
         int[] ans = new int[nums.length];

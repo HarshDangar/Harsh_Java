@@ -11,12 +11,12 @@ public class P704 {
         //Problem is solved with using recursion
     }
 
-    public static int search(int[] nums, int target) {
+    private static int search(int[] nums, int target) {
         int result = find(nums, 0, nums.length - 1, target);
         return result;
     }
 
-    public static int find(int[] arr, int start, int end, int target) {
+    private static int find(int[] arr, int start, int end, int target) {
         if (start <= end) {
             int mid = start + (end - start) / 2;
 

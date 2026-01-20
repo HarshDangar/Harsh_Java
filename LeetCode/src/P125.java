@@ -6,7 +6,7 @@ public class P125 {
         System.out.println(isPalindrome3(s));
     }
 
-    public static boolean isPalindrome(String s) {
+    private static boolean isPalindrome(String s) {
         s = s.toLowerCase();
         int start = 0, end = s.length() - 1;
 
@@ -27,14 +27,14 @@ public class P125 {
         return true;
     }
 
-    public static boolean alphanumeric(char character) {
+    private static boolean alphanumeric(char character) {
         if (character >= 'a' && character <= 'z' || character >= '0' && character <= '9') {
             return true;
         }
         return false;
     }
 
-    public static boolean isPalindrome2(String s) {
+    private static boolean isPalindrome2(String s) {
         s = s.toLowerCase();
         StringBuilder sb = new StringBuilder();
 
@@ -47,7 +47,7 @@ public class P125 {
         return sb.toString().equals(sb.reverse().toString());
     }
 
-    public static boolean isPalindrome3(String s) {
+    private static boolean isPalindrome3(String s) {
         StringBuilder sb = new StringBuilder(s.toLowerCase().replaceAll("[^a-z0-9]", ""));
         return Objects.equals(sb.toString(), sb.reverse().toString());
     }

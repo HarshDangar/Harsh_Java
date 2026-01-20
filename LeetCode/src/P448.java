@@ -9,7 +9,7 @@ public class P448 {
         System.out.println(findDisappearedNumbers2(arr));
     }
 
-    static List<Integer> findDisappearedNumbers(int[] nums) {
+    private static List<Integer> findDisappearedNumbers(int[] nums) {
         int i = 0;
         ArrayList<Integer> ans = new ArrayList<>();
         while (i < nums.length) {
@@ -29,7 +29,7 @@ public class P448 {
         return ans;
     }
 
-    public static List<Integer> findDisappearedNumbers2(int[] nums) {
+    private static List<Integer> findDisappearedNumbers2(int[] nums) {
         Set<Integer> set = new HashSet<>();
         for (int val : nums) {
             set.add(val);
@@ -43,7 +43,7 @@ public class P448 {
         return list;
     }
 
-    static void swap(int[] arr, int first, int second) {
+    private static void swap(int[] arr, int first, int second) {
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;

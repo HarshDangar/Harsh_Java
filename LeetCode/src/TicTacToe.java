@@ -40,7 +40,7 @@ public class TicTacToe {
         }
     }
 
-    public static void printBoard(char[][] board) {
+    private static void printBoard(char[][] board) {
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board.length; col++) {
                 System.out.print(board[row][col] + " | ");
@@ -49,7 +49,7 @@ public class TicTacToe {
         }
     }
 
-    public static boolean haveWon(char[][] board, char player) {
+    private static boolean haveWon(char[][] board, char player) {
         // check rows
         for (int row = 0; row < board.length; row++) {
             if (board[row][0] == player && board[row][1] == player && board[row][2] == player) {

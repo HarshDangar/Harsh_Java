@@ -4,7 +4,7 @@ public class P136 {
         System.out.println(singleNumber(arr));
     }
 
-    public static int singleNumber(int[] nums) {
+    private static int singleNumber(int[] nums) {
         int sum = 0;
         for (int value : nums) {
             sum ^= value;

@@ -7,7 +7,7 @@ public class P1886 {
         System.out.println(findRotation(mat, target));
     }
 
-    public static boolean findRotation(int[][] mat, int[][] target) {
+    private static boolean findRotation(int[][] mat, int[][] target) {
         if (isSame(mat, target))
             return true;
 

@@ -4,7 +4,7 @@ public class P1464 {
         System.out.println(maxProduct2(nums));
     }
 
-    public static int maxProduct(int[] nums) {
+    private static int maxProduct(int[] nums) {
         int max = Integer.MIN_VALUE;
 
         for (int i = 0; i < nums.length; i++) {
@@ -17,7 +17,7 @@ public class P1464 {
         return max;
     }
 
-    public static int maxProduct2(int[] nums) {
+    private static int maxProduct2(int[] nums) {
         int max1 = Integer.MIN_VALUE;
         int max2 = Integer.MIN_VALUE;
 

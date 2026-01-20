@@ -3,7 +3,7 @@ public class P441 {
         System.out.println(arrangeCoins(5));
     }
 
-    public static int arrangeCoins(int n) {
+    private static int arrangeCoins(int n) {
         long start = 1, end = n;
 
         while (start <= end) {

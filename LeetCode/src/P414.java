@@ -5,7 +5,7 @@ public class P414 {
         System.out.println(thirdMax(nums));
     }
 
-    public static int thirdMax(int[] nums) {
+    private static int thirdMax(int[] nums) {
         long fMax = Long.MIN_VALUE;
         long sMax = Long.MIN_VALUE;
         long max = Long.MIN_VALUE;

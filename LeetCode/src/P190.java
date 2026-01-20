@@ -3,7 +3,7 @@ public class P190 {
         System.out.println(reverseBits(2147483644));
     }
 
-    public static int reverseBits(int n) {
+    private static int reverseBits(int n) {
         int sum = 0;
 
         for (int i = 31; i >= 0; i--) {

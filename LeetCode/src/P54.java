@@ -8,7 +8,7 @@ public class P54 {
         System.out.println(spiralOrder(mat));
     }
 
-    public static List<Integer> spiralOrder(int[][] matrix) {
+    private static List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> list = new ArrayList<>();
 
         if (matrix.length == 0)
@@ -52,7 +52,7 @@ public class P54 {
         return list;
     }
 
-    public static List<Integer> spiralOrder2(int[][] matrix) {
+    private static List<Integer> spiralOrder2(int[][] matrix) {
         List<Integer> res = new LinkedList<>();
         if (matrix == null || matrix.length == 0) return res;
         int m = matrix.length, n = matrix[0].length;

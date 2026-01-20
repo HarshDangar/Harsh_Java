@@ -3,7 +3,7 @@ public class P1137 {
         System.out.println(tribonacci(25));
     }
 
-    public static int tribonacci(int n) {
+    private static int tribonacci(int n) {
         if (n <= 1) return n;
         if (n == 2) return 1;
 

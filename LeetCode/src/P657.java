@@ -4,7 +4,7 @@ public class P657 {
         System.out.println(judgeCircle(moves));
     }
 
-    public static boolean judgeCircle(String moves) {
+    private static boolean judgeCircle(String moves) {
         int row = 0, col = 0;
 
         if (moves.length() % 2 != 0) {

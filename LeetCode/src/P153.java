@@ -4,7 +4,7 @@ public class P153 {
         System.out.println(findMin(nums));
     }
 
-    public static int findMin(int[] nums) {
+    private static int findMin(int[] nums) {
         int pivot = findPivot(nums);
 
         if (pivot == -1)
@@ -13,7 +13,7 @@ public class P153 {
             return nums[pivot + 1];
     }
 
-    public static int findPivot(int[] arr) {
+    private static int findPivot(int[] arr) {
         int count = 0;
         int pivot;
         int start = 0;

@@ -3,7 +3,7 @@ public class P2283 {
         System.out.println(digitCount("1210"));
     }
 
-    public static boolean digitCount(String num) {
+    private static boolean digitCount(String num) {
         int[] freq = new int[10];
         for(char c : num.toCharArray()){
             freq[c-'0']++;

@@ -8,12 +8,12 @@ public class P202 {
         System.out.println(isHappy(n));
     }
 
-    public static boolean isHappy(int n) {
+    private static boolean isHappy(int n) {
         List<Integer> list = new ArrayList<>();
         return check(n, list);
     }
 
-    public static boolean check(int n, List<Integer> list) {
+    private static boolean check(int n, List<Integer> list) {
         if (n == 1)
             return true;
 

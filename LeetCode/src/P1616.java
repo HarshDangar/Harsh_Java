@@ -6,7 +6,7 @@ public class P1616 {
         System.out.println(checkPalindromeFormation(a, b));
     }
 
-    public static boolean checkPalindromeFormation(String a, String b) {
+    private static boolean checkPalindromeFormation(String a, String b) {
 
         for (int i = 0; i < a.length(); i++) {
             if (isPalindrome(a.substring(0, i) + b.substring(i, a.length())))
@@ -17,7 +17,7 @@ public class P1616 {
         return false;
     }
 
-    public static boolean isPalindrome(String str) {
+    private static boolean isPalindrome(String str) {
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) != str.charAt(str.length() - 1 - i)) {
                 return false;

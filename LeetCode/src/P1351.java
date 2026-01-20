@@ -4,7 +4,7 @@ public class P1351 {
         System.out.println(countNegatives(grid));
     }
 
-    public static int countNegatives(int[][] grid) {
+    private static int countNegatives(int[][] grid) {
         int row = 0;
         int col = grid[0].length - 1;
         int count = 0;

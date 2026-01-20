@@ -13,7 +13,7 @@ public class SubSet {
         }
     }
 
-    static List<List<Integer>> subset(int[] arr) {
+    private static List<List<Integer>> subset(int[] arr) {
         //In the note prime red book page no 50
         List<List<Integer>> outer = new ArrayList<>();
 
@@ -32,7 +32,7 @@ public class SubSet {
         return outer;
     }
 
-    static List<List<Integer>> subsetDuplicate(int[] arr) {
+    private static List<List<Integer>> subsetDuplicate(int[] arr) {
         Arrays.sort(arr);
         List<List<Integer>> outer = new ArrayList<>();
         outer.add(new ArrayList<>());

@@ -3,11 +3,11 @@ public class P1342 {
         System.out.println(numberOfSteps(14));
     }
 
-    static int numberOfSteps(int num) {
+    private static int numberOfSteps(int num) {
         return helper(num, 0);
     }
 
-    static int helper(int num, int steps) {
+    private static int helper(int num, int steps) {
         if (num == 0)
             return steps;
 

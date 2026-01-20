@@ -11,7 +11,7 @@ public class P832 {
         }
     }
 
-    static int[][] flipAndInvertImage(int[][] image) {
+    private static int[][] flipAndInvertImage(int[][] image) {
         int[][] arr = new int[image.length][image.length];
         int[][] ans = new int[image.length][image.length];
 

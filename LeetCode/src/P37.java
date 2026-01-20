@@ -19,7 +19,7 @@ public class P37 {
         }
     }
 
-    static boolean solve(char[][] board) {
+    private static boolean solve(char[][] board) {
         int row = -1;
         int col = -1;
 
@@ -44,7 +44,7 @@ public class P37 {
         return true;
     }
 
-    static void display(char[][] board) {
+    private static void display(char[][] board) {
         for (char[] row : board) {
             for (char character : row) {
                 System.out.print(character + " ");
@@ -53,7 +53,7 @@ public class P37 {
         }
     }
 
-    static boolean isSafe(char[][] board, int row, int col, char character) {
+    private static boolean isSafe(char[][] board, int row, int col, char character) {
 
         for (int i = 0; i < board.length; i++) {
             //Check the row

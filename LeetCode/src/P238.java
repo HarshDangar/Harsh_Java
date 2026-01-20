@@ -6,7 +6,7 @@ public class P238 {
         System.out.println(Arrays.toString(productExceptSelf(nums)));
     }
 
-    public static int[] productExceptSelf(int[] nums) {
+    private static int[] productExceptSelf(int[] nums) {
         int zeroCount = 0;
         int zeroIndex = -1;
         int product = 1;

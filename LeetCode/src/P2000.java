@@ -5,7 +5,7 @@ public class P2000 {
         System.out.println(reversePrefix(word, ch));
     }
 
-    public static String reversePrefix(String word, char ch) {
+    private static String reversePrefix(String word, char ch) {
         StringBuilder finalAns = new StringBuilder();
         StringBuilder temp = new StringBuilder();
         int index;

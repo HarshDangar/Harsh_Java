@@ -3,7 +3,7 @@ public class P461 {
         System.out.println(hammingDistance(1, 3));
     }
 
-    public static int hammingDistance(int x, int y) {
+    private static int hammingDistance(int x, int y) {
         int count = 0;
 
         while (x != 0 || y != 0) {

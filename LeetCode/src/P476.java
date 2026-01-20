@@ -3,7 +3,7 @@ public class P476 {
         System.out.println(findComplement(1));
     }
 
-    public static int findComplement(int num) {
+    private static int findComplement(int num) {
         int count = 0;
         int sum = 0;
 

@@ -4,7 +4,7 @@ public class P1678 {
         System.out.println(interpret(command));
     }
 
-    public static String interpret(String command) {
+    private static String interpret(String command) {
         StringBuilder builder = new StringBuilder();
 
         for (int i = 0; i < command.length(); i++) {

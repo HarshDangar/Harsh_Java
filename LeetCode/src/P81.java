@@ -4,7 +4,7 @@ public class P81 {
         System.out.println(search(arr, 8));
     }
 
-    public static boolean search(int[] nums, int target) {
+    private static boolean search(int[] nums, int target) {
         int pivot = findPivot(nums);
 
         if (pivot == -1) {
@@ -25,7 +25,7 @@ public class P81 {
 
     }
 
-    public static int findPivot(int[] arr) {
+    private static int findPivot(int[] arr) {
         int count = 0;
         int pivot;
         int start = 0;
@@ -40,7 +40,7 @@ public class P81 {
         return pivot;
     }
 
-    public static int binarySearch(int[] arr, int target, int start, int end) {
+    private static int binarySearch(int[] arr, int target, int start, int end) {
 
         while (start <= end) {
             int mid = start + (end - start) / 2;

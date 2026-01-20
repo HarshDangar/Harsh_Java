@@ -3,7 +3,7 @@ public class P342 {
         System.out.println(isPowerOfFour(256));
     }
 
-    public static boolean isPowerOfFour(int n) {
+    private static boolean isPowerOfFour(int n) {
         int x ;
         if (n > 0) {
             x = (int) (Math.log10(n) / Math.log10(4));

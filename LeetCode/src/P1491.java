@@ -4,7 +4,7 @@ public class P1491 {
         System.out.println(average(nums));
     }
 
-    public static double average(int[] salary) {
+    private static double average(int[] salary) {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
         int total = 0;

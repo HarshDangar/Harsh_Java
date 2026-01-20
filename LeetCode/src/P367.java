@@ -1,5 +1,5 @@
 public class P367 {
-    public static boolean isPerfectSquare(int num) {
+    private static boolean isPerfectSquare(int num) {
         long start = 0, end = num;
 
         while (start <= end) {

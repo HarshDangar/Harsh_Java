@@ -9,7 +9,7 @@ public class P989 {
         System.out.println(addToArrayForm(arr, k));
     }
 
-    static List<Integer> addToArrayForm(int[] num, int k) {
+    private static List<Integer> addToArrayForm(int[] num, int k) {
         ArrayList<Integer> list = new ArrayList<>();
         int i = num.length - 1;
 

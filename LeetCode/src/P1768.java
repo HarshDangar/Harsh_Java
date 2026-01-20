@@ -4,7 +4,7 @@ public class P1768 {
         System.out.println(mergeAlternately(word1, word2));
     }
 
-    public static String mergeAlternately(String word1, String word2) {
+    private static String mergeAlternately(String word1, String word2) {
         StringBuilder sb = new StringBuilder();
         int i = 0;
 

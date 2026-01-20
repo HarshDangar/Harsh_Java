@@ -5,7 +5,7 @@ public class P852 {
         System.out.println(peakIndexInMountainArray(nums));
     }
 
-    static int peakIndexInMountainArray(int[] arr) {
+    private static int peakIndexInMountainArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
 

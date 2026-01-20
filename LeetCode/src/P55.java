@@ -4,7 +4,7 @@ public class P55 {
         System.out.println(canJump(nums));
     }
 
-    public static boolean canJump(int[] nums) {
+    private static boolean canJump(int[] nums) {
         int goal = nums.length - 1;
         int index = goal - 1;
 

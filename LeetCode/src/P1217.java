@@ -6,7 +6,7 @@ public class P1217 {
         System.out.println(minCostToMoveChips(arr));
     }
 
-    public static int minCostToMoveChips(int[] position) {
+    private static int minCostToMoveChips(int[] position) {
         int even = 0;
         for (int chip : position) {
             if (chip % 2 == 0)

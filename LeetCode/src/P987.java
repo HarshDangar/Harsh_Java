@@ -1,14 +1,10 @@
 import java.util.*;
 
 public class P987 {
-    public static void main(String[] args) {
-
-    }
-
-    public static class TreeNode {
+    private static class TreeNode {
         int val;
-        P105.TreeNode left;
-        P105.TreeNode right;
+        TreeNode left;
+        TreeNode right;
 
         TreeNode() {
         }
@@ -17,14 +13,14 @@ public class P987 {
             this.val = val;
         }
 
-        TreeNode(int val, P105.TreeNode left, P105.TreeNode right) {
+        TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
             this.right = right;
         }
     }
 
-    public List<List<Integer>> verticalTraversal(TreeNode node) {
+    private List<List<Integer>> verticalTraversal(TreeNode node) {
         List<List<Integer>> ans = new ArrayList<List<Integer>>();
 
         if (node == null) {

@@ -4,7 +4,7 @@ public class P1608 {
         System.out.println(specialArray(arr));
     }
 
-    public static int specialArray(int[] nums) {
+    private static int specialArray(int[] nums) {
         bubble(nums);
         int n = nums.length;
 
@@ -18,7 +18,7 @@ public class P1608 {
         return -1;
     }
 
-    static void bubble(int[] arr) {
+    private static void bubble(int[] arr) {
         boolean swapped;
 
         for (int i = 0; i < arr.length; i++) {

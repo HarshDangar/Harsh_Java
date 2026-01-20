@@ -7,7 +7,7 @@ public class P189 {
         System.out.println(Arrays.toString(nums));
     }
 
-    public static void rotate(int[] nums, int k) {
+    private static void rotate(int[] nums, int k) {
         int n = nums.length;
         k = k % n;
         int[] rotated = new int[n];

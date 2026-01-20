@@ -4,7 +4,7 @@ public class P1832_2 {
         System.out.println(checkIfPangram((arr)));
     }
 
-    static boolean checkIfPangram(String sentence) {
+    private static boolean checkIfPangram(String sentence) {
         boolean[] arr = new boolean[26];
 
         for (int i = 0; i < sentence.length(); i++) {

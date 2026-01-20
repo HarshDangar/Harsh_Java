@@ -4,7 +4,7 @@ public class P1572 {
         System.out.println(diagonalSum(arr));
     }
 
-    static int diagonalSum(int[][] mat) {
+    private static int diagonalSum(int[][] mat) {
         int sum = 0;
 
         for (int i = 0; i < mat.length; i++) {

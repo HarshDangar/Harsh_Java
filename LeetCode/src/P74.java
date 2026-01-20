@@ -5,7 +5,7 @@ public class P74 {
         System.out.println(searchMatrix(matrix, target));
     }
 
-    public static boolean searchMatrix(int[][] matrix, int target) {
+    private static boolean searchMatrix(int[][] matrix, int target) {
         for (int[] arr : matrix) {
             int start = 0;
             int end = arr.length - 1;
@@ -17,7 +17,7 @@ public class P74 {
         return false;
     }
 
-    static boolean binarySearch(int[] nums, int target) {
+    private static boolean binarySearch(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;
 

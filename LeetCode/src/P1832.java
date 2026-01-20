@@ -7,7 +7,7 @@ public class P1832 {
     }
 
 
-    static boolean checkIfPangram2(String sentence) {
+    private static boolean checkIfPangram2(String sentence) {
         char[] arr = sentence.toCharArray();
         Arrays.sort(arr);
 
@@ -18,7 +18,7 @@ public class P1832 {
         return check(arr, 'a', 0);
     }
 
-    static boolean check(char[] ans, char start, int index) {
+    private static boolean check(char[] ans, char start, int index) {
         if (start == 'z') {
             return true;
         }

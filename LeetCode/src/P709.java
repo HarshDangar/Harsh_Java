@@ -4,7 +4,7 @@ public class P709 {
         System.out.println(toLowerCase(s));
     }
 
-    public static String toLowerCase(String s) {
+    private static String toLowerCase(String s) {
         return s.toLowerCase();
     }
 }

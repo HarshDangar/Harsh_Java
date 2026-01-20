@@ -5,7 +5,7 @@ public class P59 {
         System.out.println(Arrays.deepToString(generateMatrix(5)));
     }
 
-    public static int[][] generateMatrix(int n) {
+    private static int[][] generateMatrix(int n) {
         int[][] arr = new int[n][n];
         int count = 0;
 

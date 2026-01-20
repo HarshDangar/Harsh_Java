@@ -1,5 +1,5 @@
 public class P226 {
-    public static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -18,7 +18,7 @@ public class P226 {
         }
     }
 
-    public static TreeNode invertTree(TreeNode root) {
+    private static TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return null;
         }

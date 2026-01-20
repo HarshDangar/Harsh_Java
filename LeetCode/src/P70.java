@@ -3,7 +3,7 @@ public class P70 {
         System.out.println(climbStairs(5));
     }
 
-    public static int climbStairs(int n) {
+    private static int climbStairs(int n) {
         if (n <= 3) return n;
 
         int prev1 = 3;

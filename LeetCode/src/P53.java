@@ -5,7 +5,7 @@ public class P53 {
         System.out.println(maxSubArray2(arr));
     }
 
-    static int maxSubArray(int[] nums) {
+    private static int maxSubArray(int[] nums) {
         int maxSum = Integer.MIN_VALUE;
 
         for (int i = 0; i < nums.length; i++) {
@@ -21,7 +21,7 @@ public class P53 {
 
     // Kaden's algorithm
 
-    static int maxSubArray2(int[] nums) {
+    private static int maxSubArray2(int[] nums) {
         int maxSum = nums[0];
         int sum = nums[0];
 

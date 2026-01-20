@@ -6,7 +6,7 @@ public class P1929 {
         System.out.println(Arrays.toString(getConcatenation(nums)));
     }
 
-    static int[] getConcatenation(int[] nums) {
+    private static int[] getConcatenation(int[] nums) {
         int[] ans = new int[(nums.length) * 2];
 
         for (int i = 0; i < ans.length; i++) {

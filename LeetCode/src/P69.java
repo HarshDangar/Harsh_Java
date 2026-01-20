@@ -1,7 +1,7 @@
 
 
 public class P69 {
-    public static int mySqrt(int x) {
+    private static int mySqrt(int x) {
         long start = 1;
         long end = x;
         long ans = 0;

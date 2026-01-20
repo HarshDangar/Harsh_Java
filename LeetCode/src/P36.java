@@ -15,7 +15,7 @@ public class P36 {
         System.out.println(isValidSudoku(board));
     }
 
-    public static boolean isValidSudoku(char[][] board) {
+    private static boolean isValidSudoku(char[][] board) {
         boolean[][] rows = new boolean[9][9];
         boolean[][] cols = new boolean[9][9];
         boolean[][] boxes = new boolean[9][9];

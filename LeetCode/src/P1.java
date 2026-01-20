@@ -9,7 +9,7 @@ class P1 {
         System.out.println(Arrays.toString(twoSum(nums, target)));
     }
 
-    public static int[] twoSum(int[] nums, int target) {
+    private static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> numMap = new HashMap<>(); // A mapping to store numbers and their indices
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i]; // Find the required number to reach the target

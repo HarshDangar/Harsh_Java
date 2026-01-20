@@ -7,7 +7,7 @@ public class P645 {
     }
 
     //Approach 1
-    static int[] findErrorNums(int[] nums) {
+    private int[] findErrorNums(int[] nums) {
         int i = 0;
 
         while (i < nums.length) {
@@ -28,14 +28,14 @@ public class P645 {
         return new int[]{-1, -1};
     }
 
-    static void swap(int[] arr, int first, int second) {
+    private void swap(int[] arr, int first, int second) {
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;
     }
 
     //Approach 2
-    public static int[] findErrorNums2(int[] nums) {
+    private static int[] findErrorNums2(int[] nums) {
         int missing = -1, duplicate = -1;
         int[] arr = new int[nums.length];
 

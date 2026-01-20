@@ -8,7 +8,7 @@ public class P1431 {
         System.out.println(kidsWithCandies(arr, extraCandies));
     }
 
-    static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+    private static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int max = Integer.MIN_VALUE;
         ArrayList<Boolean> list = new ArrayList<Boolean>(candies.length);
 

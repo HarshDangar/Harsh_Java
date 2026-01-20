@@ -7,7 +7,7 @@ public class P1480 {
         System.out.println(Arrays.toString(runningSum(arr)));
     }
 
-    static int[] runningSum(int[] nums) {
+    private static int[] runningSum(int[] nums) {
         int[] ans = new int[nums.length];
         int sum = 0;
 

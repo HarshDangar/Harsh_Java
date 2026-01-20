@@ -4,7 +4,7 @@ public class P1539 {
         System.out.println(findKthPositive(arr, 5));
     }
 
-    public static int findKthPositive(int[] arr, int k) {
+    private static int findKthPositive(int[] arr, int k) {
         int start = 1, l = 0, j = 0;
         int[] temp = new int[k];
         temp[k - 1] = 0;

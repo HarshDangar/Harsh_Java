@@ -6,7 +6,7 @@ public class P2001 {
         System.out.println(interchangeableRectangles(rectangles));
     }
 
-    public static long interchangeableRectangles(int[][] rectangles) {
+    private static long interchangeableRectangles(int[][] rectangles) {
         HashMap<Double, Integer> map = new HashMap<>();
         long ans = 0;
 

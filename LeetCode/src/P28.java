@@ -13,7 +13,7 @@ public class P28 {
 //        }
 //    }
 
-    public static int strStr(String haystack, String needle) {
+    private static int strStr(String haystack, String needle) {
         if (haystack.length() < needle.length()) {
             return -1;
         }

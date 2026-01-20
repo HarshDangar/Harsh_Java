@@ -9,7 +9,7 @@ public class P1365 {
         System.out.println(Arrays.toString(smallerNumbersThanCurrent2(nums)));
     }
 
-    public static int[] smallerNumbersThanCurrent(int[] nums) {
+    private static int[] smallerNumbersThanCurrent(int[] nums) {
         int[] ans = new int[nums.length];
 
         for (int i = 0; i < nums.length; i++) {
@@ -24,7 +24,7 @@ public class P1365 {
         return ans;
     }
 
-    public static int[] smallerNumbersThanCurrent2(int[] nums) {
+    private static int[] smallerNumbersThanCurrent2(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         int[] copy = nums.clone();
 

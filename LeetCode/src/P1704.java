@@ -4,7 +4,7 @@ public class P1704 {
         System.out.println(halvesAreAlike(s));
     }
 
-    public static boolean halvesAreAlike(String s) {
+    private static boolean halvesAreAlike(String s) {
         int mid = s.length() / 2;
         String firstHalf = s.substring(0, mid);
         String secondHalf = s.substring(mid);
@@ -15,7 +15,7 @@ public class P1704 {
         return countFirst == countSecond;
     }
 
-    public static int countVowels(String str) {
+    private static int countVowels(String str) {
         int count = 0;
         for (char ch : str.toCharArray()) {
             if ("AEIOUaeiou".indexOf(ch) != -1) {

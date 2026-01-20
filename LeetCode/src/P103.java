@@ -2,7 +2,7 @@ import java.util.*;
 
 public class P103 {
 
-    public class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -21,7 +21,7 @@ public class P103 {
         }
     }
 
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    private List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
 
         if (root == null) {

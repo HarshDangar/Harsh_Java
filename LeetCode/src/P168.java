@@ -4,7 +4,7 @@ public class P168 {
         System.out.println(convertToTitle(columnNumber));
     }
 
-    public static String convertToTitle(int columnNumber) {
+    private static String convertToTitle(int columnNumber) {
         StringBuilder sb = new StringBuilder();
 
         while (columnNumber > 0) {

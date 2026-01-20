@@ -6,7 +6,7 @@ public class P762 {
         System.out.println(countPrimeSetBits(6, 10));
     }
 
-    public static int countPrimeSetBits(int left, int right) {
+    private static int countPrimeSetBits(int left, int right) {
         int count = 0;
         Integer[] primeArr = {2,3,5,7,11,13,17,19};
         HashSet<Integer> primeSet = new HashSet<>(Arrays.asList(primeArr));
@@ -20,7 +20,7 @@ public class P762 {
         return count;
     }
 
-    public static int countPrimeSetBits2(int left, int right) {
+    private static int countPrimeSetBits2(int left, int right) {
         int count = 0;
         Integer[] primeArr = {2,3,5,7,11,13,17,19};
         HashSet<Integer> primeSet = new HashSet<>(Arrays.asList(primeArr));
@@ -33,7 +33,7 @@ public class P762 {
         return count;
     }
 
-    public static int countBit(int n) {
+    private static int countBit(int n) {
         int count = 0;
 
         while (n > 0) {

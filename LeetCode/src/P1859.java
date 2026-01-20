@@ -4,7 +4,7 @@ public class P1859 {
         System.out.println(sortSentence(name));
     }
 
-    public static String sortSentence(String s) {
+    private static String sortSentence(String s) {
         StringBuilder sb = new StringBuilder();
 
         String[] words = s.split(" ");

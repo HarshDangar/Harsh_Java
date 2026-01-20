@@ -4,7 +4,7 @@ public class P162 {
         System.out.println(findPeakElement(nums));
     }
 
-    public static int findPeakElement(int[] nums) {
+    private static int findPeakElement(int[] nums) {
         if (nums.length == 1) return 0; // single element
 
         int n = nums.length;

@@ -6,7 +6,7 @@ public class P1356 {
         System.out.println(Arrays.toString(sortByBits(nums)));
     }
 
-    public static int[] sortByBits(int[] arr) {
+    private static int[] sortByBits(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] += Integer.bitCount(arr[i]) * 10001;
         }

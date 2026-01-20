@@ -8,7 +8,7 @@ public class P15 {
         System.out.println(threeSum(nums));
     }
 
-    public static List<List<Integer>> threeSum(int[] nums) {
+    private static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> ans= new ArrayList<>();
         Arrays.sort(nums);
 

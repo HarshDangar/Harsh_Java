@@ -11,7 +11,7 @@ public class P1773 {
         System.out.println(countMatches(items, "type", "phone"));
     }
 
-    public static int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
+    private static int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int index = 0;
 
         if (ruleKey.equals("color"))

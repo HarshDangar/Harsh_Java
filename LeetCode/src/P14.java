@@ -8,7 +8,7 @@ public class P14 {
         System.out.println(longestCommonPrefix(strs));
     }
 
-    public static String longestCommonPrefix(String[] strs) {
+    private static String longestCommonPrefix(String[] strs) {
         Arrays.sort(strs);
 
         String s1 = strs[0];

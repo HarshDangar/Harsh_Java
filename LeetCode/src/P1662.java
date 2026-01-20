@@ -4,7 +4,7 @@ public class P1662 {
         System.out.println(arrayStringsAreEqual(word1, word2));
     }
 
-    public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+    private static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         StringBuilder ans1 = new StringBuilder();
         StringBuilder ans2 = new StringBuilder();
 

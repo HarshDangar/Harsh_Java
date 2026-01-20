@@ -3,7 +3,7 @@ public class P693 {
         System.out.println(hasAlternatingBits(7));
     }
 
-    public static boolean hasAlternatingBits(int n) {
+    private static boolean hasAlternatingBits(int n) {
         int lastBit = n & 1;
         n >>= 1;
 

@@ -14,7 +14,7 @@ public class P867 {
         }
     }
 
-    static int[][] transpose(int[][] matrix) {
+    private static int[][] transpose(int[][] matrix) {
         int[][] ans = new int[matrix[0].length][matrix.length];
 
         for (int row = 0; row < matrix[0].length; row++) {

@@ -3,7 +3,7 @@ public class P191 {
         System.out.println(hammingWeight(2147483645));
     }
 
-    public static int hammingWeight(int n) {
+    private static int hammingWeight(int n) {
         int count = 0;
 
         while (n > 0) {

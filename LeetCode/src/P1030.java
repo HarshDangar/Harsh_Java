@@ -6,7 +6,7 @@ public class P1030 {
         System.out.println(Arrays.deepToString(allCellsDistOrder(rows, cols, rCenter, cCenter)));
     }
 
-    public static int[][] allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {
+    private static int[][] allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {
         int[][] result = new int[rows * cols][];
         result[0] = new int[]{rCenter, cCenter};
 

@@ -4,7 +4,7 @@ public class P680 {
         System.out.println(validPalindrome(s));
     }
 
-    public static boolean validPalindrome(String s) {
+    private static boolean validPalindrome(String s) {
         StringBuilder sb = new StringBuilder(s);
 
         if (sb.reverse().toString().equals(s)) {
@@ -24,7 +24,7 @@ public class P680 {
         return true;
     }
 
-    public static boolean isPalindrome(String s, int start, int end) {
+    private static boolean isPalindrome(String s, int start, int end) {
         while (start < end) {
             if (s.charAt(start) != s.charAt(end)) {
                 return false;

@@ -4,7 +4,7 @@ public class P1281 {
         System.out.println(subtractProductAndSum(n));
     }
 
-    static int subtractProductAndSum(int n) {
+    private static int subtractProductAndSum(int n) {
         int sum = 0;
         int mult = 1;
 

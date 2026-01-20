@@ -6,7 +6,7 @@ public class P1512 {
         System.out.println(numIdenticalPairs(nums));
     }
 
-    static int numIdenticalPairs(int[] nums) {
+    private static int numIdenticalPairs(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
         int ans = 0;
         for (int i : nums) {
@@ -19,7 +19,7 @@ public class P1512 {
         return ans;
     }
 
-    public static int numIdenticalPairs2(int[] nums) {
+    private static int numIdenticalPairs2(int[] nums) {
         HashMap<Integer, Integer> hm = new HashMap<>();
         int ans = 0;
         for (int i : nums) {

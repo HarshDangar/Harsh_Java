@@ -4,7 +4,7 @@ public class P1309 {
         System.out.println(freqAlphabets(s));
     }
 
-    public static String freqAlphabets(String s) {
+    private static String freqAlphabets(String s) {
         StringBuilder finalAns = new StringBuilder();
 
         for (int i = s.length() - 1; i >= 0; i--) {

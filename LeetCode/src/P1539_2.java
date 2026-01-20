@@ -6,7 +6,7 @@ public class P1539_2 {
         System.out.println(findKthPositive(arr, 5));
     }
 
-    public static int findKthPositive(int[] arr, int k) {
+    private static int findKthPositive(int[] arr, int k) {
         int start = 0;
         int end = arr.length;
 

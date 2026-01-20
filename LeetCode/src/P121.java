@@ -6,7 +6,7 @@ public class P121 {
         System.out.println(maxProfit(prices));
     }
 
-    public static int maxProfit(int[] prices) {
+    private static int maxProfit(int[] prices) {
         int buyPrice = prices[0];
         int profit = 0;
 

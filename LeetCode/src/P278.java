@@ -1,5 +1,5 @@
 public class P278 {
-    public static int firstBadVersion(int n) {
+    private static int firstBadVersion(int n) {
         int start = 0;
         int end = n - 1;
         int mid = start + (end - start) / 2;
@@ -15,20 +15,15 @@ public class P278 {
         return mid;
     }
 
-    static boolean isBadVersion(int version) {
-        switch (version) {
-            case 1:
-                return false;
-            case 2:
-                return false;
-            case 3:
-                return false;
-            case 4:
-                return true;
-            case 5:
-                return true;
-        }
-        return false;
+    private static boolean isBadVersion(int version) {
+        return switch (version) {
+            case 1 -> false;
+            case 2 -> false;
+            case 3 -> false;
+            case 4 -> true;
+            case 5 -> true;
+            default -> false;
+        };
     }
 
     public static void main(String[] args) {

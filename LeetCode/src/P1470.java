@@ -8,7 +8,7 @@ public class P1470 {
 
     }
 
-    static int[] shuffle(int[] nums, int n) {
+    private static int[] shuffle(int[] nums, int n) {
         int[] ans = new int[nums.length];
         int l = 0;
 

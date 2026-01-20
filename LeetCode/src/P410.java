@@ -6,7 +6,7 @@ public class P410 {
         System.out.println(ans);
     }
 
-    static int splitArray(int[] nums, int k) {
+    private static int splitArray(int[] nums, int k) {
         int start = 0;
         int end = 0;
 

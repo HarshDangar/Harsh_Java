@@ -4,7 +4,7 @@ public class P540 {
         System.out.println(singleNonDuplicate(arr));
     }
 
-    public static int singleNonDuplicate(int[] nums) {
+    private static int singleNonDuplicate(int[] nums) {
         int start = 0;
         int end = nums.length - 1;
 

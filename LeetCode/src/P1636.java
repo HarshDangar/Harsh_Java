@@ -8,7 +8,7 @@ public class P1636 {
         System.out.println(Arrays.toString(frequencySort(arr)));
     }
 
-    public static int[] frequencySort(int[] nums) {
+    private static int[] frequencySort(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
         Integer[] arr = new Integer[nums.length];
 

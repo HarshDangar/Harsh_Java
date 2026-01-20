@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class P167 {
-    public static int[] twoSum(int[] numbers, int target) {
+    private static int[] twoSum(int[] numbers, int target) {
         int start = 0, end = numbers.length - 1;
 
         while (start < end) {

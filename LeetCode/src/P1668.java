@@ -4,7 +4,7 @@ public class P1668 {
         System.out.println(maxRepeating(sequence, word));
     }
 
-    public static int maxRepeating(String sequence, String word) {
+    private static int maxRepeating(String sequence, String word) {
         int count = 0;
         StringBuilder sb = new StringBuilder(word);
 

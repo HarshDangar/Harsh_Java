@@ -6,7 +6,7 @@ public class P744 {
         System.out.println(nextGreatestLetter(letters, target));
     }
 
-    public static char nextGreatestLetter(char[] letters, char target) {
+    private static char nextGreatestLetter(char[] letters, char target) {
         int start = 0;
         int end = letters.length - 1;
 

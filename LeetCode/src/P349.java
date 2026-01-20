@@ -8,7 +8,7 @@ public class P349 {
         System.out.println(Arrays.toString(intersection(nums1, nums2)));
     }
 
-    public static int[] intersection(int[] nums1, int[] nums2) {
+    private static int[] intersection(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);
 

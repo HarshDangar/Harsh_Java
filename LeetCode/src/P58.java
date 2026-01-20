@@ -5,7 +5,7 @@ public class P58 {
         System.out.println(lengthOfLastWord(s));
     }
 
-    public static int lengthOfLastWord(String s) {
+    private static int lengthOfLastWord(String s) {
         String[] temp = s.split(" ");
 
         return temp[temp.length - 1].length();

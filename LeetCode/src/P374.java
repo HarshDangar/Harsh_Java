@@ -1,5 +1,5 @@
 public class P374 {
-    public static int guessNumber(int n) {
+    private static int guessNumber(int n) {
         long start = 1;
         long end = n;
 
@@ -17,7 +17,7 @@ public class P374 {
         return -2;
     }
 
-    public static int guess(int num) {
+    private static int guess(int num) {
         int pick = 8;
 
         if (num > pick) {

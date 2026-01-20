@@ -4,7 +4,7 @@ public class P1732 {
         System.out.println(largestAltitude(arr));
     }
 
-    static int largestAltitude(int[] gain) {
+    private static int largestAltitude(int[] gain) {
         int[] arr = new int[gain.length + 1];
         arr[0] = 0;
 

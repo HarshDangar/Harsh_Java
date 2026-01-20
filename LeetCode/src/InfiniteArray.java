@@ -5,7 +5,7 @@ public class InfiniteArray {
         System.out.println(ans(arr, target));
     }
 
-    public static int ans(int[] arr, int target) {
+    private static int ans(int[] arr, int target) {
         int start = 0, end = 1;
 
         while (target > arr[end]) {
@@ -17,10 +17,10 @@ public class InfiniteArray {
             end = end + (end - start + 1) * 2;
             start = newStart;
         }
-        return binarysearch(arr, target, start, end);
+        return binarySearch(arr, target, start, end);
     }
 
-    static int binarysearch(int[] nums, int target, int start, int end) {
+    private static int binarySearch(int[] nums, int target, int start, int end) {
 
         while (start <= end) {
             int mid = start + (end - start) / 2;
