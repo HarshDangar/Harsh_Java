@@ -1,28 +1,33 @@
 public class P1616 {
-
-    //Problem is working but time limit exceed so have to write a new code
     public static void main(String[] args) {
         String a = "ulacfd", b = "jizalu";
         System.out.println(checkPalindromeFormation(a, b));
     }
 
     private static boolean checkPalindromeFormation(String a, String b) {
-
-        for (int i = 0; i < a.length(); i++) {
-            if (isPalindrome(a.substring(0, i) + b.substring(i, a.length())))
-                return true;
-            if (isPalindrome(b.substring(0, i) + a.substring(i, a.length())))
-                return true;
-        }
-        return false;
+        return validate(a, b) || validate(b, a);
     }
 
-    private static boolean isPalindrome(String str) {
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) != str.charAt(str.length() - 1 - i)) {
-                return false;
-            }
+    private static boolean validate(String a, String b) {
+        int start = 0;
+        int end = a.length() - 1;
+
+        while (start < end) {
+            if (a.charAt(start) != b.charAt(end))
+                break;
+            start++;
+            end--;
         }
-        return true;
+        return isPalindrome(a, start, end) || isPalindrome(b, start, end);
+    }
+
+    private static boolean isPalindrome(String a, int start, int end) {
+        while (start < end) {
+            if (a.charAt(start) != a.charAt(end))
+                return false;
+            start++;
+            end--;
+        }
+        return start >= end;
     }
 }

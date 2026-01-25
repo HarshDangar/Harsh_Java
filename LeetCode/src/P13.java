@@ -1,6 +1,6 @@
 public class P13 {
     public static void main(String[] args) {
-        String s = "MCMXCIV";
+        String s = "MMMCMXCIX";
         System.out.println(romanToInt(s));
     }
 

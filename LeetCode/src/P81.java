@@ -1,47 +1,37 @@
 public class P81 {
     public static void main(String[] args) {
-        int[] arr = {2, 5, 6, 0, 0, 1, 2};
-        System.out.println(search(arr, 8));
+        int[] arr = {3,5,1};
+        int target = 1;
+        System.out.println(search(arr, target));
     }
 
     private static boolean search(int[] nums, int target) {
         int pivot = findPivot(nums);
 
-        if (pivot == -1) {
-            if (binarySearch(nums, 0, 0, nums.length - 1) == -1) {
-                return false;
-            } else return true;
-        }
-
         if (nums[pivot] == target)
             return true;
 
         if (target >= nums[0] && pivot > 0) {
-            if (binarySearch(nums, target, 0, pivot - 1) == -1) {
-                return false;
-            } else return true;
+            return binarySearch(nums, target, 0, pivot);
         }
-        return true;
-
+        return binarySearch(nums, target, pivot + 1, nums.length - 1);
     }
 
     private static int findPivot(int[] arr) {
-        int count = 0;
-        int pivot;
+        int pivot = 0;
         int start = 0;
-        int end = arr.length - 1;
 
-        while (arr[start] > arr[end] && start < end) {
-            count++;
+        while (start <= arr.length - 2) {
+            if (arr[start + 1] < arr[start]) {
+                pivot = start;
+                break;
+            }
             start++;
         }
-        pivot = count - 1;
-
         return pivot;
     }
 
-    private static int binarySearch(int[] arr, int target, int start, int end) {
-
+    private static boolean binarySearch(int[] arr, int target, int start, int end) {
         while (start <= end) {
             int mid = start + (end - start) / 2;
 
@@ -50,10 +40,9 @@ public class P81 {
             } else if (target > arr[mid]) {
                 start = mid + 1;
             } else {
-                return mid;
+                return true;
             }
         }
-
-        return -1;
+        return false;
     }
 }
