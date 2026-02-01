@@ -6,8 +6,8 @@ import java.util.List;
 
 public class SubSet {
     public static void main(String[] args) {
-        int[] arr = {4, 5, 2, 1};
-        List<List<Integer>> ans = subset(arr);
+        int[] arr = {4, 2, 2, 1};
+        List<List<Integer>> ans = subsetDuplicate(arr);
         for (List<Integer> list : ans) {
             System.out.println(list);
         }
