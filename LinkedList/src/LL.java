@@ -2,11 +2,23 @@ public class LL {
 
     private Node head;
     private Node tail;
-
     private int size;
-
     public LL() {
         this.size = 0;
+    }
+
+    private class Node {
+        private int value;
+        private Node next;
+
+        public Node(int value) {
+            this.value = value;
+        }
+
+        public Node(int value, Node next) {
+            this.value = value;
+            this.next = next;
+        }
     }
 
     public void insertFirst(int val){
@@ -33,6 +45,7 @@ public class LL {
     public void insertRec(int val, int index) {
         head = insertRec(val, index, head);
     }
+
     private Node insertRec(int val, int index, Node node) {
         if (index == 0) {
             Node temp = new Node(val, node);
@@ -149,20 +162,6 @@ public class LL {
             node = node.next;
         }
         return null;
-    }
-
-    private class Node {
-        private int value;
-        private Node next;
-
-        public Node(int value) {
-            this.value = value;
-        }
-
-        public Node(int value, Node next) {
-            this.value = value;
-            this.next = next;
-        }
     }
 
     //Linked list problem no 83 ans.

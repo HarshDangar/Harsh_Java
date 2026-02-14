@@ -10,8 +10,8 @@ public class P46 {
     private static List<List<Integer>> permute(int[] nums) {
         List<Integer> up = new ArrayList<>();
 
-        for (int i = 0; i < nums.length; i++) {
-            up.add(nums[i]);
+        for (int num : nums) {
+            up.add(num);
         }
 
         return permutation(new ArrayList<>(), up);
