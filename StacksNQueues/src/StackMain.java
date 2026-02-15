@@ -13,7 +13,9 @@ public class StackMain {
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
+        System.out.println(stack.peek());
         System.out.println(stack.pop());
-        System.out.println(stack.pop());  // Here it will give Exception with CustomStack only.
+        System.out.println(stack.pop());
+        System.out.println(stack.pop()); // Here it will give Exception with CustomStack only.
     }
 }

@@ -1,13 +1,12 @@
-import java.util.Stack;
-
 public class CustomStack {
     protected int[] data;
     private static final int DEFAULT_SIZE = 10;
 
-    int ptr = -1;
+    int ptr = -1; //Pointer which is almost behaving like index
 
     public CustomStack(){
-        this(DEFAULT_SIZE);
+        this(DEFAULT_SIZE); //Constructor that's call another constructor
+        // In simple terms it calls CustomStack(10)
     }
 
     public CustomStack(int size) {
@@ -30,10 +29,11 @@ public class CustomStack {
         }
         int removed = data[ptr];
         ptr--;
-        return removed;
+        return removed; // return data[ptr--]
     }
 
     public int peek() throws StackException{
+        // Return the top of the element
 
         if (isEmpty()){
             throw new StackException("Cannot peek from an empty stack!!");
@@ -42,10 +42,10 @@ public class CustomStack {
     }
 
     public boolean isFull() {
-        return ptr == data.length - 1; // ptr is at last index.
+        return ptr == data.length - 1; // pointer is at last index.
     }
 
     public boolean isEmpty(){
-        return ptr == -1; // If ptr is at -1 than pointer is pointing before the array means array is null right now.
+        return ptr == -1; // If pointer is at -1 than pointer is pointing before the array means array is null right now.
     }
 }
