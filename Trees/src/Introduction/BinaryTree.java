@@ -87,6 +87,7 @@ public class BinaryTree {
     }
 
     public void preOrder(){
+        // In simple words postOrder meaning the node is touched 3 times in traversal
         preOrder(root);
     }
 
@@ -101,6 +102,7 @@ public class BinaryTree {
     }
 
     public void inOrder(){
+        // In simple words postOrder meaning the node is touched 2 times in traversal
         inOrder(root);
     }
 
