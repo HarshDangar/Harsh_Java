@@ -12,14 +12,14 @@ public class P1431 {
         int max = Integer.MIN_VALUE;
         ArrayList<Boolean> list = new ArrayList<Boolean>(candies.length);
 
-        for (int i = 0; i < candies.length; i++) {
-            if (candies[i] > max) {
-                max = candies[i];
+        for (int j : candies) {
+            if (j > max) {
+                max = j;
             }
         }
 
-        for (int j = 0; j < candies.length; j++) {
-            if (candies[j] + extraCandies >= max) {
+        for (int candy : candies) {
+            if (candy + extraCandies >= max) {
                 list.add(true);
             } else {
                 list.add(false);
