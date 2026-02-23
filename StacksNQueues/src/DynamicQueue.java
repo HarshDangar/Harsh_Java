@@ -7,6 +7,7 @@ public class DynamicQueue extends CircularQueue{
         super(); // It will call DynamicQueue(int size).
     }
 
+    //It is only for circular queue
     @Override
     public boolean insert(int item) {
         if (isFull()){
