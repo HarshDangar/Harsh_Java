@@ -35,6 +35,10 @@ public class P102 {
 
         while (!queue.isEmpty()) {
             int levelSize = queue.size();
+            /* levelsize mean elements in the queue in the start we only have root node in the queue
+                so the we only need to remove the one element
+                now if two children of the root is added in the queue then we have to remove 2 nodes so there will be levelsize 2
+             */
             List<Integer> currentLevel = new ArrayList<>(levelSize);
 
             for (int i = 0; i < levelSize; i++) {
