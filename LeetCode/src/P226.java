@@ -32,4 +32,18 @@ public class P226 {
 
         return root;
     }
+
+    private static TreeNode invertTree2(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+
+        TreeNode left = invertTree2(root.left);
+        TreeNode right = invertTree2(root.right);
+
+        root.left = right;
+        root.right = left;
+
+        return root;
+    }
 }
