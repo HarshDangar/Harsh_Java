@@ -1,11 +1,7 @@
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class P105 {
-    public static void main(String[] args) {
-        int[] preorder = {3, 9, 20, 15, 7}, inorder = {9, 3, 15, 20, 7};
-        System.out.println(buildTree(preorder, inorder));
-    }
-
     private static class TreeNode {
         int val;
         TreeNode left;
@@ -55,6 +51,34 @@ public class P105 {
 
         node.left = helper(preOrder, inOrder, left, inorderIndex - 1, map, index);
         node.right = helper(preOrder, inOrder, inorderIndex + 1, right, map, index);
+
+        return node;
+    }
+
+    public static void main(String[] args) {
+        int[] preorder = {3, 9, 20, 15, 7}, inorder = {9, 3, 15, 20, 7};
+        buildTree2(preorder,inorder);
+    }
+
+    private static TreeNode buildTree2(int[] preorder, int[] inorder) {
+        if (preorder.length == 0) {
+            return null;
+        }
+
+        int root = preorder[0];
+        int index = 0;
+
+        for(int i = 0; i < inorder.length; i++) {
+            if (inorder[i] == root) {
+                index = i;
+                break;
+            }
+        }
+
+        TreeNode node = new TreeNode(root);
+
+        node.left = buildTree2(Arrays.copyOfRange(preorder, 1, index + 1), Arrays.copyOfRange(inorder, 0, index));
+        node.right = buildTree2(Arrays.copyOfRange(preorder, index + 1, preorder.length), Arrays.copyOfRange(inorder, index + 1, inorder.length));
 
         return node;
     }
