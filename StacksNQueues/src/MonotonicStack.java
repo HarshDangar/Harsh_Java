@@ -11,6 +11,8 @@ public class MonotonicStack {
     public static void main(String[] args) {
         int[] nums = {2, 1, 2, 4, 3};
         System.out.println(Arrays.toString(nextGreater(nums)));
+        int[] temperatures = {73, 74, 75, 71, 69, 72, 76, 73};
+        System.out.println(Arrays.toString(dailyTemperatures(temperatures)));
     }
 
     private static int[] nextGreater(int[] nums) {
@@ -29,6 +31,24 @@ public class MonotonicStack {
                 ans[i] = stack.peek();
 
             stack.push(nums[i]);
+        }
+        return ans;
+    }
+
+    // P739 Decreasing stack
+    private static int[] dailyTemperatures(int[] temperatures) {
+        int[] ans = new int[temperatures.length];
+        Stack<Integer> stack = new Stack<>();
+
+        for (int i = temperatures.length - 1; i >= 0; i--) {
+            while (!stack.isEmpty() && temperatures[stack.peek()] <= temperatures[i]) {
+                stack.pop();
+            }
+
+            if (!stack.isEmpty()) {
+                ans[i] = stack.peek() - i;
+            }
+            stack.push(i);
         }
         return ans;
     }
