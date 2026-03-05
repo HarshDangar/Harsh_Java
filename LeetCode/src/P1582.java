@@ -20,11 +20,8 @@ public class P1582 {
                 }
             }
 
-            if (count != 1) {
-                continue; //Row skip
-            } else if (checkCol(mat, i, col)) {
+            if (count == 1 && checkCol(mat, i, col))
                 special++;
-            }
         }
         return special;
     }
