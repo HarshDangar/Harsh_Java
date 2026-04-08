@@ -12,9 +12,9 @@ public class P1732 {
             arr[i] = arr[i - 1] + gain[i - 1];
         }
         int max = Integer.MIN_VALUE;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
+        for (int j : arr) {
+            if (j > max) {
+                max = j;
             }
         }
         return max;
