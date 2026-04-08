@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class P345 {
     public static void main(String[] args) {
         String  s = "IceCreAm";
-        System.out.println(reverseVowels(s));
+        System.out.println(reverseVowels2(s));
     }
 
     private static String reverseVowels(String s) {
@@ -32,5 +32,33 @@ public class P345 {
 
         }
         return String.valueOf(ch);
+    }
+
+    private static String reverseVowels2(String s) {
+        int n = s.length();
+        char[] arr = s.toCharArray();
+
+        int i = 0;
+        int j = n - 1;
+
+        while (i < j) {
+            if (!isCharVowel(arr[i]))
+                i++;
+            else if (!isCharVowel(arr[j]))
+                j--;
+            else {
+                char temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                i++;
+                j--;
+            }
+        }
+        return String.valueOf(arr);
+    }
+
+    private static boolean isCharVowel(char ch) {
+        String vowels = "aeiouAEIOU";
+        return vowels.indexOf(ch) != -1;
     }
 }
