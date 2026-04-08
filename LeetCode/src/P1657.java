@@ -1,0 +1,37 @@
+import java.util.Arrays;
+
+public class P1657 {
+    public static void main(String[] args) {
+        String word1 = "abc", word2 = "bca";
+        System.out.println(closeStrings(word1, word2));
+    }
+
+    private static boolean closeStrings(String word1, String word2) {
+        int[] arr1 = new int[26];
+        int[] arr2 = new int[26];
+
+        for (char c : word1.toCharArray()) {
+            arr1[c - 'a']++;
+        }
+
+        for (char c : word2.toCharArray()) {
+            arr2[c - 'a']++;
+        }
+
+        //Frequencies of the each character can either be both zero or both have > 0 it cant be 0 !0 || !0 0
+        for (int i = 0; i < 26; i++) {
+            if ((arr1[i] == 0 && arr2[i] != 0) || (arr1[i] != 0 && arr2[i] == 0)) {
+                return false;
+            }
+        }
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        for (int i = 0; i < 26; i++) {
+            if (arr1[i] != arr2[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
