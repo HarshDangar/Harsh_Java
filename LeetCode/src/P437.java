@@ -18,30 +18,38 @@ public class P437 {
         }
     }
 
-    //Approach - 1: We are checking every possible node : O(n^2)
-    static int total = 0;
+    static int counter = 0;
     private static int pathSum(TreeNode root, int targetSum) {
         if (root == null)
             return 0;
 
-        findPathSum(root, targetSum, 0);
+        helper(root, targetSum, 0);
         pathSum(root.left, targetSum);
         pathSum(root.right, targetSum);
 
-        return total;
+        return counter;
     }
 
-    private static void findPathSum(TreeNode root, int targetSum, int currentSum) {
-        if (root == null)
+    private static void helper(TreeNode root, int sum, long currentSum) {
+        if (root == null) {
             return;
-
-        currentSum += root.val;
-
-        if (targetSum == currentSum) {
-            total++;
         }
+        currentSum += root.val;
+        if (currentSum == sum) {
+            counter++;
+        }
+        helper(root.left, sum, currentSum);
+        helper(root.right, sum, currentSum);
+    }
 
-        findPathSum(root.left, targetSum, currentSum);
-        findPathSum(root.right, targetSum, currentSum);
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(1000000000);
+        root.left = new TreeNode(1000000000);
+        root.left.left = new TreeNode(294967296);
+        root.left.left.left = new TreeNode(1000000000);
+        root.left.left.left.left = new TreeNode(1000000000);
+        root.left.left.left.left.left = new TreeNode(1000000000);
+
+        System.out.println(pathSum(root, 0));
     }
 }
