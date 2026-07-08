@@ -4,6 +4,8 @@ public class P394 {
     public static void main(String[] args) {
         String s = "3[a2[c]]";
         System.out.println(decodeString(s));
+
+        System.out.println(encodeString("abcef"));
     }
 
     private static String decodeString(String s) {
@@ -34,5 +36,31 @@ public class P394 {
             }
         }
         return curr_str.toString();
+    }
+
+    //Encode String with RLE (Run Length Encoding)
+    private static String encodeString(String s) {
+        if (s == null || s.isEmpty()) {
+            return "";
+        }
+
+        StringBuilder result = new StringBuilder();
+
+        int count = 1;
+
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(i) == s.charAt(i - 1)) {
+                count++;
+            } else {
+                result.append(count);
+                result.append(s.charAt(i - 1));
+                count = 1;
+            }
+        }
+
+        result.append(count);
+        result.append(s.charAt(s.length() - 1));
+
+        return result.toString();
     }
 }
