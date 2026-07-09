@@ -20,6 +20,7 @@ public class P382 {
     }
 }
 
+
 //class Solution {
 //    ArrayList<Integer> list = new ArrayList<>();
 //
