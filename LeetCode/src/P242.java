@@ -12,9 +12,6 @@ public class P242 {
         Arrays.sort(first);
         Arrays.sort(second);
 
-        if (Arrays.compare(first, second) == 0)
-            return true;
-        else
-            return false;
+        return Arrays.compare(first, second) == 0;
     }
 }
