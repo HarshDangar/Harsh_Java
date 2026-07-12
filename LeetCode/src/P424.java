@@ -1,7 +1,7 @@
 public class P424 {
     public static void main(String[] args) {
-        String s = "ABBB";
-        int k = 2;
+        String s = "AABABBA";
+        int k = 1;
         System.out.println(characterReplacement(s, k));
     }
 
