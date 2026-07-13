@@ -51,8 +51,6 @@ public class P46 {
     private static List<List<Integer>> permute2(int[] nums) {
         n = nums.length;
 
-        List<Integer> temp;
-
         solve(new ArrayList<>(), nums);
 
         return result;
