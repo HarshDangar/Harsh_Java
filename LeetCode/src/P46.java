@@ -49,6 +49,8 @@ public class P46 {
     static List<List<Integer>> result;
     static ArrayList<Integer> set;
     private static List<List<Integer>> permute2(int[] nums) {
+        result = new ArrayList<>();
+        set = new ArrayList<>();
         n = nums.length;
 
         solve(new ArrayList<>(), nums);
@@ -58,18 +60,19 @@ public class P46 {
 
     private static void solve(List<Integer> temp, int[] nums) {
         if (temp.size() == n) {
-            result.add(temp);
+            result.add(new ArrayList<>(temp));
             return;
         }
 
         for (int i = 0; i < n; i++) {
             if (!set.contains(nums[i])) {
                 temp.add(nums[i]);
+                set.add(nums[i]);
 
                 solve(temp, nums);
 
-                temp.remove(nums[i]);
-                set.remove(nums[i]);
+                temp.removeLast();
+                set.remove(Integer.valueOf(nums[i])); //We have to convert it into object
             }
         }
     }
