@@ -1,10 +1,13 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class P46 {
     public static void main(String[] args) {
-        int[] nums = {1,1,2};
+        int[] nums = {1,2,3};
         System.out.println(permute(nums));
+        System.out.println(permute2(nums));
     }
 
     private static List<List<Integer>> permute(int[] nums) {
@@ -41,5 +44,37 @@ public class P46 {
             ans.addAll(permutation(temp, up.subList(1,up.size())));
         }
         return ans;
+    }
+
+    //Approach 2 : Backtracking O(n * n!)
+    static int n;
+    static List<List<Integer>> result;
+    static ArrayList<Integer> set;
+    private static List<List<Integer>> permute2(int[] nums) {
+        n = nums.length;
+
+        List<Integer> temp;
+
+        solve(new ArrayList<>(), nums);
+
+        return result;
+    }
+
+    private static void solve(List<Integer> temp, int[] nums) {
+        if (temp.size() == n) {
+            result.add(temp);
+            return;
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (!set.contains(nums[i])) {
+                temp.add(nums[i]);
+
+                solve(temp, nums);
+
+                temp.remove(nums[i]);
+                set.remove(nums[i]);
+            }
+        }
     }
 }
