@@ -43,7 +43,7 @@ public class P22 {
     }
 
     //Approach 2 : With directly checking open and close bracket count
-    static private List<String> result = new ArrayList<>();
+    static private final List<String> result = new ArrayList<>();
     private static List<String> generateParenthesis2(int n) {
         solve(n, "", 0, 0);
         return result;
