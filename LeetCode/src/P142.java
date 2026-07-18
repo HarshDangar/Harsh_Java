@@ -21,7 +21,7 @@ public class P142 {
                 break;
         }
 
-        if (fast == null || fast.next == null)
+        if (fast == null || fast.next == null) //No cycle detected
             return null;
 
         while (head != slow) {
