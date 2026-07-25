@@ -9,6 +9,7 @@ public class Main {
 
         Parent daughter = new Daughter(28);
         daughter.career();
+        daughter.partner();
 
         Parent.hello();
 //        Parent mom = new Parent(45);
