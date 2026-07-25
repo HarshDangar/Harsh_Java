@@ -1,7 +1,5 @@
 package Polymorphism;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         Shapes shape = new Shapes();
@@ -13,5 +11,9 @@ public class Main {
         triangle.area();
         shape.area();
         square.area();
+
+        //Runtime Polymorphism
+        Shapes shapes = new Circle();
+        shapes.area();
     }
 }
