@@ -20,8 +20,6 @@ public class Basic {
         // this is not public or protected, only private or default
         // why? we dont want to create new objects
         // this is not the enum concept, thats why
-
-
     }
 
     public static void main(String[] args) {

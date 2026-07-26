@@ -1,7 +1,5 @@
 package Access;
 
-import java.util.ArrayList;
-
 public class A {
     private int num;
     String name;
