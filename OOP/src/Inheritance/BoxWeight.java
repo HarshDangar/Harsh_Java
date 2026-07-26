@@ -19,7 +19,7 @@ public class BoxWeight extends Box {
 
     public BoxWeight(double l, double h, double w, double weight) {
         super(l, h, w); // Here it   is calling parent class constructor
-        // used to initialise values of parent class
+        // used to initialize values of parent class
 
         System.out.println(super.h);
         // Here we can use super as well as this both represent same and call that we type
