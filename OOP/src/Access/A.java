@@ -18,4 +18,5 @@ public class A {
         this.name = name;
         this.arr = new int[num];
     }
+
 }

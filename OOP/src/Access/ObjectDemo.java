@@ -1,7 +1,5 @@
 package Access;
 
-import Inheritance.Main;
-
 public class ObjectDemo {
 
     int num;
