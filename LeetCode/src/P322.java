@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class P322 {
     public static void main(String[] args) {
         int[] coins = {1, 2, 5, 7};
+        System.out.println(coinChange(coins, 12));
         System.out.println(coinChange2(coins, 12));
     }
 
