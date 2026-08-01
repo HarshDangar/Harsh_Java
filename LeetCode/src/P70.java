@@ -3,7 +3,8 @@ import java.util.Arrays;
 public class P70 {
     public static void main(String[] args) {
         System.out.println(climbStairs(45));
-        System.out.println(climbStairs(45));
+        System.out.println(climbStairs2(45));
+        System.out.println(climbStairs3(45));
     }
 
     private static int climbStairs(int n) {
@@ -24,7 +25,7 @@ public class P70 {
 
     //Recursion + Memoization
     static int[] dp;
-    private static int climpStairs2(int n) {
+    private static int climbStairs2(int n) {
         dp = new int[n + 1];
         Arrays.fill(dp, -2);
         return solve(n);
@@ -42,5 +43,23 @@ public class P70 {
             return dp[n];
 
         return dp[n] = solve(n - 1) + solve(n - 2);
+    }
+
+    //Bottom Up
+    private static int climbStairs3(int n) {
+        if (n == 1 || n == 2)
+            return n;
+
+        int[] dp = new int[n + 1];
+
+        dp[0] = 0;
+        dp[1] = 1;
+        dp[2] = 2;
+
+        for (int i = 3; i <= n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+
+        return dp[n];
     }
 }
