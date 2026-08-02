@@ -4,6 +4,7 @@ public class P198 {
     public static void main(String[] args) {
         int[] nums = {40, 2, 4, 10};
         System.out.println(rob(nums));
+        System.out.println(rob2(nums));
     }
 
     //Company : Amazon, OYO Rooms, Paytm, Walmart, Google, Flipkart, LinkedIn, Airbnb
