@@ -5,6 +5,7 @@ public class P442 {
     public static void main(String[] args) {
         int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
         System.out.println(findDuplicates(arr));
+        System.out.println(findDuplicates2(arr));
     }
 
     private static List<Integer> findDuplicates(int[] nums) {
@@ -33,5 +34,18 @@ public class P442 {
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;
+    }
+
+    //Approach 2
+    private static List<Integer> findDuplicates2(int[] nums) {
+        List<Integer> list = new ArrayList<>();
+        for(int i = 0; i < nums.length; i++) {
+            int curr = Math.abs(nums[i]);
+            if(nums[curr - 1] < 0) {
+                list.add(curr);
+            }
+            nums[curr - 1] *= -1;
+        }
+        return list;
     }
 }
