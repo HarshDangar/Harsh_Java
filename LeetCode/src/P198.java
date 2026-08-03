@@ -5,6 +5,7 @@ public class P198 {
         int[] nums = {40, 2, 4, 10};
         System.out.println(rob(nums));
         System.out.println(rob2(nums));
+        System.out.println(rob3(nums));
     }
 
     //Company : Amazon, OYO Rooms, Paytm, Walmart, Google, Flipkart, LinkedIn, Airbnb
@@ -56,5 +57,27 @@ public class P198 {
             t[i] = Integer.max(steal, skip);
         }
         return t[n];
+    }
+
+    //Constant Space
+    private static int rob3(int[] nums) {
+        int n = nums.length;
+
+        if (n == 1)
+            return nums[0];
+
+        int prevPrev = 0;
+        int prev = nums[0];
+
+        for (int i = 2; i <= n; i++) {
+            int steal = nums[i - 1] + prevPrev;
+            int skip = prev;
+
+            int temp = Math.max(steal, skip);
+
+            prevPrev = prev;
+            prev = temp;
+        }
+        return prev;
     }
 }
