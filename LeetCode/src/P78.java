@@ -5,6 +5,7 @@ public class P78 {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};
         System.out.println(subsets(nums));
+        System.out.println(subsets2(nums));
     }
 
     private static List<List<Integer>> subsets(int[] nums) {
@@ -24,5 +25,26 @@ public class P78 {
             }
         }
         return outer;
+    }
+
+    //Approach 2 : With using bit manipulation
+    private static List<List<Integer>> subsets2(int[] nums) {
+        int n = nums.length;
+
+        int totalSubsets = 1 << n; // 2^n
+
+        List<List<Integer>> ans = new ArrayList<>();
+
+        for (int num = 0; num < totalSubsets; num++) {
+            List<Integer> curr = new ArrayList<>();
+
+            for (int i = 0; i < n; i++) {
+                if ((num & (1 << i)) != 0) {
+                    curr.add(nums[i]);
+                }
+            }
+            ans.add(curr);
+        }
+        return ans;
     }
 }
