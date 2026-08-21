@@ -14,9 +14,8 @@ public class P455 {
         while (i < g.length && j < s.length) {
             if (g[i] <= s[j]) {
                 i++;
-                j++;
-            } else
-                j++;
+            }
+            j++;
         }
         return i;
     }
