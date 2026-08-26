@@ -3,21 +3,27 @@ public class P2000 {
         String word = "abcdefd";
         char ch = 'd';
         System.out.println(reversePrefix(word, ch));
+        System.out.println(reversePrefix2(word, ch));
     }
 
     private static String reversePrefix(String word, char ch) {
-        StringBuilder finalAns = new StringBuilder();
-        StringBuilder temp = new StringBuilder();
-        int index;
+        int index = word.indexOf(ch);
+        if (index != -1)
+            return new StringBuilder(word.substring(0, index + 1)).reverse() + word.substring(index + 1);
 
-        if (word.contains(String.valueOf(ch))) {
-            index = word.indexOf(String.valueOf(ch));
-            temp.append(word.substring(0, index + 1));
-            finalAns.append(temp.reverse().toString()).append(word.substring(index + 1));
-        } else {
-            finalAns.append(word);
+        return word;
+    }
+
+    private static String reversePrefix2(String word, char ch) {
+        int i = 0;
+        int j = word.indexOf(ch);
+
+        char[] arr = word.toCharArray();
+        while (i < j) {
+            char temp = arr[i];
+            arr[i++] = arr[j];
+            arr[j--] = temp;
         }
-
-        return finalAns.toString();
+        return new String(arr);
     }
 }
